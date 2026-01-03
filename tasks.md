@@ -10,9 +10,11 @@
 - [x] **Category Cleanup & SEO:** (Completed)
 - [x] **E-E-A-T (Trust):** (Completed)
 - [x] **Final Polish:** (Completed)
-- [x] **Deployment:**
-    - [x] Create GitHub Repository. <!-- id: 70 -->
-    - [x] Push v1.0 code to `main`. <!-- id: 71 -->
-    - [x] Deploy to Vercel (Production) via CLI. <!-- id: 72 -->
-    - [x] Add Custom Domain (`muslimadhkar.com`) on Vercel. <!-- id: 73 -->
-    - [x] Configure DNS A Record on GoDaddy (`76.76.21.21`). <!-- id: 74 -->
+- [x] **Deployment:** (Completed)
+- [x] **Home Page Polish:** (Completed)
+- [x] **Decoupling Adhkar & Duas:** (Completed)
+- [x] **Data Enrichment:**
+    - [x] Match English JSON entries to local JSONs via audio ID. <!-- id: 83 -->
+    - [x] Populate `translation` and `transliteration` fields. <!-- id: 84 -->
+    - [x] Clean Up text (remove extra parens). <!-- id: 85 -->
+    - [x] Verify `anxiety-sorrow-dua.json`. <!-- id: 86 -->

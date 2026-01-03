@@ -33,7 +33,14 @@ export default async function DuasIndexPage() {
         }
     });
 
-    const allCategories = Array.from(new Set([...Object.keys(categoryMap), ...dynamicCategories]));
+    const allCategories = Array.from(new Set([...Object.keys(categoryMap), ...dynamicCategories]))
+        .filter(cat => ![
+            'morning-adhkar',
+            'evening-adhkar',
+            'after-salah',
+            'sleeping-adhkar',
+            'waking-up-adhkar'
+        ].includes(cat));
 
     return (
         <div className="max-w-5xl mx-auto px-4 py-8">
