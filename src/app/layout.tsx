@@ -31,6 +31,12 @@ export const metadata: Metadata = {
     description: "Daily Adhkar and Duas from authentic sources.",
     type: "website",
   },
+  manifest: '/manifest.json',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 import CommandPalette from "@/components/search/CommandPalette";
