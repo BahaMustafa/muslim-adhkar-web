@@ -18,6 +18,21 @@ export interface QuranVerse {
     transliteration?: string;
 }
 
+export interface QuranVerseDetail {
+    id: number; // global id
+    number: number; // ayah number in surah
+    text: string;
+    translations: { [key: string]: string };
+    transliteration: string;
+    chapter: {
+        id: number;
+        name: string;
+        transliteration: string;
+        translations: { [key: string]: string };
+        type: string;
+    };
+}
+
 export interface QuranChapterDetail extends QuranChapter {
     verses: QuranVerse[];
 }
@@ -60,6 +75,17 @@ export async function getChapterDetail(id: number, lang: string = 'en'): Promise
     } catch (e) {
         console.error(e);
         return null;
+    }
+}
+
+export async function getVerse(globalId: number): Promise<QuranVerseDetail | null> {
+    try {
+        const res = await fetch(`${CDN_BASE}/verses/${globalId}.json`, { next: { revalidate: 86400 } });
+        if (!res.ok) throw new Error(`Failed to fetch verse ${globalId}`);
+        return await res.json();
+    } catch (e) {
+        console.error(e);
+        return null; // Handle fallback in UI
     }
 }
 
