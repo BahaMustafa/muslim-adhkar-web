@@ -34,8 +34,9 @@ export const metadata: Metadata = {
 };
 
 import CommandPalette from "@/components/search/CommandPalette";
+import { Footer } from "@/components/layout/Footer";
+
 import { Header } from "@/components/layout/Header";
-// ... existing imports
 
 export default function RootLayout({
   children,
@@ -45,11 +46,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} antialiased min-h-screen bg-white text-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} antialiased min-h-screen bg-white text-gray-900 flex flex-col`}
       >
         <CommandPalette />
         <Header />
-        {children}
+        <div className="flex-1">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );

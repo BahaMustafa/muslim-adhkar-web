@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next'
 import { getAllAdhkarSlugs, getAdhkarBySlug } from '@/lib/adhkar-service'
 import { categoryMap } from '@/lib/data'
+import { getChapters } from '@/lib/quran'
+import { getSurahSlug } from '@/lib/quran-mapping'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://muslim-adhkar.com' // Placeholder
@@ -63,5 +65,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.7,
     }));
 
-    return [...staticPages, ...adhkarPages, ...categoryPages];
+    // 4. Dynamic Quran Pages
+    const chapters = await getChapters();
+    const quranPages: MetadataRoute.Sitemap = chapters.map(chapter => ({
+        url: `${baseUrl}/sources/quran/${getSurahSlug(chapter.id)}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.9,
+    }));
+
+    return [...staticPages, ...adhkarPages, ...categoryPages, ...quranPages];
 }

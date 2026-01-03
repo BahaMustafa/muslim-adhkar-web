@@ -1,41 +1,40 @@
-import Link from 'next/link';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-    title: 'About MuslimAdhkar.com - Methodology & Accuracy',
-    description: 'Learn about our methodology for authenticating Adhkar from the Sunnah and our commitment to providing a Digital Waqf for the Ummah.',
+export const metadata = {
+    title: "About Us - Muslim Adhkar",
+    description: "Learn about our mission to provide authentic Adhkar and Duas to the global Ummah.",
 };
 
 export default function AboutPage() {
     return (
-        <div className="container mx-auto px-4 py-8 max-w-4xl">
-            <h1 className="text-4xl font-bold mb-8 text-center text-emerald-800">About MuslimAdhkar.com</h1>
+        <main className="container mx-auto px-4 py-12 max-w-3xl">
+            <h1 className="text-4xl font-bold mb-8 text-foreground/90">About Muslim Adhkar</h1>
 
-            <div className="bg-white rounded-2xl shadow-sm border border-emerald-100 p-8 mb-8">
-                <h2 className="text-2xl font-bold mb-4 text-emerald-700">Our Methodology & Accuracy</h2>
-                <div className="prose max-w-none text-gray-700 space-y-4">
+            <div className="space-y-8 text-lg leading-relaxed text-muted-foreground">
+
+                <section>
+                    <h2 className="text-2xl font-semibold mb-3 text-foreground">Mission</h2>
                     <p>
-                        At MuslimAdhkar.com, we prioritize the authenticity of the Prophetic Sunnah. Our database is primarily sourced from the renowned collection "Hisnul Muslim" (Fortress of the Muslim) by Sheikh Sa'id bin Ali bin Wahf al-Qahtani.
+                        To provide the global Ummah with a fast, ad-free, and authentic resource for daily remembrances.
+                        We believe that accessing the words of Allah (SWT) and His Prophet (ﷺ) should be simple, beautiful, and distracting-free.
                     </p>
+                </section>
 
-                    <p>Every Adhkar entry on our platform includes:</p>
-                    <ul className="list-disc pl-6 space-y-2">
-                        <li><strong>Verified Arabic Text:</strong> Sourced from established Hadith narrations with full vocalization (Tashkeel) to ensure correct recitation.</li>
-                        <li><strong>Authentic Audio:</strong> High-quality audio recitations provided for correct pronunciation, primarily by Sheikh Saad Al-Ghamdi, and hosted directly on our servers for speed and reliability.</li>
-                        <li><strong>Source Transparency:</strong> We aim to provide the specific Hadith collection (e.g., Sahih Bukhari, Sahih Muslim) and reference numbers for every supplication.</li>
-                    </ul>
-
-                    <p className="mt-6 pt-6 border-t border-gray-100">
-                        This site is a <strong>Digital Waqf</strong> (endowment)—it is free, ad-free, and built solely for the benefit of the Ummah. We do not track users or sell data.
+                <section>
+                    <h2 className="text-2xl font-semibold mb-3 text-foreground">Methodology</h2>
+                    <p>
+                        Our content is primarily sourced from the recognized book <strong>Hisnul Muslim</strong> (Fortress of the Muslim) and the <strong>Noble Quran Encyclopedia</strong>.
+                        We organize these Adhkar and Duas into intuitive categories to help you find exactly what you need for every occasion in your daily life.
                     </p>
-                </div>
-            </div>
+                </section>
 
-            <div className="flex justify-center">
-                <Link href="/duas" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full font-medium transition-colors duration-200">
-                    Explore Adhkar Collection
-                </Link>
+                <section>
+                    <h2 className="text-2xl font-semibold mb-3 text-foreground">Authenticity</h2>
+                    <p>
+                        We take authenticity seriously. We use verified Arabic scripts and high-quality audio by <strong>Sheikh Saad Al-Ghamdi</strong> to ensure accuracy in recitation.
+                        Every translation and transliteration is double-checked against established sources to ensure the correct meaning is conveyed.
+                    </p>
+                </section>
+
             </div>
-        </div>
+        </main>
     );
 }

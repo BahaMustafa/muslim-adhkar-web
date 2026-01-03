@@ -7,11 +7,12 @@ import AyahAudioPlayer from '@/components/quran/AyahAudioPlayer';
 import RelatedAdhkar from '@/components/quran/RelatedAdhkar';
 import { notFound, redirect } from 'next/navigation';
 
+import { getChapters } from '@/lib/quran';
+
 export async function generateStaticParams() {
-    // Generate for top popular Surahs
-    const popularIds = [1, 18, 36, 55, 56, 67];
-    return popularIds.map(id => ({
-        surahSlug: getSurahSlug(id)
+    const chapters = await getChapters();
+    return chapters.map((chapter) => ({
+        surahSlug: getSurahSlug(chapter.id),
     }));
 }
 
