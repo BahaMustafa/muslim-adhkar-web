@@ -33,14 +33,15 @@ export async function generateMetadata({ params, searchParams }: PageProps) {
     if (!detail) return {};
 
     return {
-        title: `Surah ${detail.transliteration} (${detail.name}) - Muslim Adhkar`,
-        description: `Read and listen to Surah ${detail.transliteration} with ${lang === 'en' ? 'English' : 'Multilingual'} translation.`,
+        title: `${detail.transliteration} - Arabic, English Translation & Audio | MuslimAdhkar.com`,
+        description: `Read and listen to Surah ${detail.transliteration} (${detail.name}) with ${lang === 'en' ? 'English' : 'Multilingual'} translation, transliteration and audio.`,
     };
 }
 
 export default async function SurahPage({ params, searchParams }: PageProps) {
     const resolvedParams = await params;
     const resolvedSearchParams = await searchParams;
+
     const { surahSlug } = resolvedParams;
 
     const id = getSurahIdFromSlug(surahSlug);
