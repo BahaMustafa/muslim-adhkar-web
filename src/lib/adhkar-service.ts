@@ -42,3 +42,9 @@ export async function getAllAdhkarByCategory(category: string): Promise<AdhkarPa
 
     return allAdhkar.filter(page => page.category?.toLowerCase() === normalizedCategory);
 }
+
+export async function getAllAdhkar(): Promise<AdhkarPageData[]> {
+    const slugs = await getAllAdhkarSlugs();
+    const allAdhkarPromises = slugs.map(slug => getAdhkarBySlug(slug));
+    return (await Promise.all(allAdhkarPromises)).filter((item): item is AdhkarPageData => item !== null);
+}
