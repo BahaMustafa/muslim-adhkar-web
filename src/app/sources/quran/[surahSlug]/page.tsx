@@ -1,26 +1,34 @@
 import { getChapterDetail, getGlobalAyahId, QURAN_LANGUAGES } from '@/lib/quran';
 import { getRelatedAdhkar } from '@/lib/quran-related';
+import { getSurahIdFromSlug, getSurahSlug } from '@/lib/quran-mapping';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import LanguageSelector from '@/components/quran/LanguageSelector';
 import AyahAudioPlayer from '@/components/quran/AyahAudioPlayer';
 import RelatedAdhkar from '@/components/quran/RelatedAdhkar';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 
 export async function generateStaticParams() {
-    // Generate for top popular Surahs + first few
-    const popular = ['1', '18', '36', '55', '56', '67'];
-    return popular.map(id => ({ surahNumber: id }));
+    // Generate for top popular Surahs
+    const popularIds = [1, 18, 36, 55, 56, 67];
+    return popularIds.map(id => ({
+        surahSlug: getSurahSlug(id)
+    }));
 }
 
 interface PageProps {
-    params: { surahNumber: string };
-    searchParams: { [key: string]: string | string[] | undefined };
+    params: Promise<{ surahSlug: string }>;
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({ params, searchParams }: PageProps) {
-    const id = parseInt(params.surahNumber);
-    if (isNaN(id)) return {};
-    const lang = (typeof searchParams.lang === 'string' ? searchParams.lang : 'en');
+    const resolvedParams = await params;
+    const resolvedSearchParams = await searchParams;
+    const { surahSlug } = resolvedParams;
+
+    const id = getSurahIdFromSlug(surahSlug);
+    if (!id) return {};
+
+    const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : 'en');
     const detail = await getChapterDetail(id, lang);
     if (!detail) return {};
 
@@ -31,12 +39,26 @@ export async function generateMetadata({ params, searchParams }: PageProps) {
 }
 
 export default async function SurahPage({ params, searchParams }: PageProps) {
-    const id = parseInt(params.surahNumber);
-    const lang = (typeof searchParams.lang === 'string' ? searchParams.lang : 'en');
+    const resolvedParams = await params;
+    const resolvedSearchParams = await searchParams;
+    const { surahSlug } = resolvedParams;
 
-    if (isNaN(id) || id < 1 || id > 114) {
+    const id = getSurahIdFromSlug(surahSlug);
+
+    // Redirect number -> slug if user visits old URL? 
+    // Or just 404? User requested "reverse lookup".
+    // If id comes null, maybe try parsing number directly?
+    if (!id) {
+        // Fallback: is it a number?
+        const parsed = parseInt(surahSlug);
+        if (!isNaN(parsed) && parsed >= 1 && parsed <= 114) {
+            const correctSlug = getSurahSlug(parsed);
+            redirect(`/sources/quran/${correctSlug}`);
+        }
         notFound();
     }
+
+    const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : 'en');
 
     // Parallel Fetching
     const detailData = getChapterDetail(id, lang);
@@ -58,7 +80,7 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
             <Breadcrumbs items={[
                 { label: "Sources", href: "/sources" },
                 { label: "Noble Quran", href: "/sources/quran" },
-                { label: detail.transliteration, href: `/sources/quran/${id}` }
+                { label: detail.transliteration, href: `/sources/quran/${surahSlug}` }
             ]} />
 
             {/* Header */}
