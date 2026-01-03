@@ -43,6 +43,7 @@ import CommandPalette from "@/components/search/CommandPalette";
 import { Footer } from "@/components/layout/Footer";
 
 import { Header } from "@/components/layout/Header";
+import Analytics from "@/components/Analytics";
 
 export default function RootLayout({
   children,
@@ -54,6 +55,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} antialiased min-h-screen bg-white text-gray-900 flex flex-col`}
       >
+        <Analytics />
         <CommandPalette />
         <Header />
         <div className="flex-1">
