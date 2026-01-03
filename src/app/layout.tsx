@@ -33,6 +33,10 @@ export const metadata: Metadata = {
   },
 };
 
+import CommandPalette from "@/components/search/CommandPalette";
+import { Header } from "@/components/layout/Header";
+// ... existing imports
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,6 +47,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} antialiased min-h-screen bg-white text-gray-900`}
       >
+        <CommandPalette />
+        <Header />
         {children}
       </body>
     </html>
