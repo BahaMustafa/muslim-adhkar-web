@@ -22,7 +22,7 @@ const amiri = Amiri({
 export const metadata: Metadata = {
   title: "Muslim Adhkar - Daily Adhkar & Duas",
   description: "Comprehensive collection of authentic Adhkar, Duas, and Hadith sources.",
-  metadataBase: new URL("https://muslim-adhkar.com"),
+  metadataBase: new URL("https://muslimadhkar.com"),
   alternates: {
     canonical: "/",
   },

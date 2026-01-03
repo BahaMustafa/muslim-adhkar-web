@@ -5,7 +5,7 @@ import { getChapters } from '@/lib/quran'
 import { getSurahSlug } from '@/lib/quran-mapping'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://muslim-adhkar.com' // Placeholder
+    const baseUrl = 'https://muslimadhkar.com' // Placeholder
 
     // 1. Static Pages
     const staticPages: MetadataRoute.Sitemap = [
