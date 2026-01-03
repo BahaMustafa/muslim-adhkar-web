@@ -71,17 +71,12 @@ export default function CommandPalette() {
     const filtered = useMemo(() => {
         if (!query) return [];
 
-        const q = query.toLowerCase();
+        const tokens = query.toLowerCase().split(/\s+/).filter(t => t.length > 0);
 
-        // Sort by relevance: Title match > Keyword match
-        // Simple filter for now
         return index.filter(item => {
-            const titleMatch = item.title.toLowerCase().includes(q);
-            const descMatch = item.description?.toLowerCase().includes(q);
-            const keywordMatch = item.keywords?.some(k => k.toLowerCase().includes(q));
-
-            return titleMatch || descMatch || keywordMatch;
-        }).slice(0, 8); // Limit to 8 results
+            const searchString = `${item.title} ${item.description || ''} ${item.keywords?.join(' ') || ''}`.toLowerCase();
+            return tokens.every(token => searchString.includes(token));
+        }).slice(0, 8);
     }, [query, index]);
 
     // Handle selection navigation

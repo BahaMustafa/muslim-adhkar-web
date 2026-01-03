@@ -24,15 +24,16 @@ export async function getSearchIndex(): Promise<SearchResult[]> {
             try {
                 const data = JSON.parse(content);
                 // Title is usually in pageTitle or pageDescription
-                if (data.pageTitle) {
+                const title = data.title || data.pageTitle;
+                if (title) {
                     // Determine URL slug from filename
                     const slug = file.replace('.json', '');
                     results.push({
                         id: `adhkar-${slug}`,
-                        title: data.pageTitle,
+                        title: title,
                         url: `/adhkar/${slug}`,
                         type: 'adhkar',
-                        description: data.pageDescription || undefined,
+                        description: data.description || data.pageDescription || undefined,
                         keywords: [slug.replace(/-/g, ' ')]
                     });
                 }

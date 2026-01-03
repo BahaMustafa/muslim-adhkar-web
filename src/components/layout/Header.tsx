@@ -1,7 +1,10 @@
 "use client";
 
+import { Suspense } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Search } from "lucide-react";
+import LanguageSelector from "@/components/quran/LanguageSelector";
 
 export function Header() {
     const openSearch = () => {
@@ -14,6 +17,7 @@ export function Header() {
                 {/* Logo */}
                 <div className="mr-4 hidden md:flex">
                     <Link href="/" className="mr-6 flex items-center space-x-2">
+                        <Image src="/logo.png" alt="Muslim Adhkar" width={32} height={32} className="rounded-sm" />
                         <span className="hidden font-bold sm:inline-block">Muslim Adhkar</span>
                     </Link>
                     <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -24,7 +28,10 @@ export function Header() {
                 </div>
 
                 {/* Mobile Logo */}
-                <Link href="/" className="mr-auto md:hidden font-bold">Adhkar</Link>
+                <Link href="/" className="mr-auto md:hidden flex items-center gap-2 font-bold">
+                    <Image src="/logo.png" alt="Logo" width={28} height={28} />
+                    <span>Adhkar</span>
+                </Link>
 
                 {/* Search Trigger */}
                 <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
@@ -38,6 +45,11 @@ export function Header() {
                                 <span className="text-xs">⌘</span>K
                             </kbd>
                         </button>
+                    </div>
+                    <div>
+                        <Suspense fallback={<div className="w-24 h-8 bg-muted rounded animate-pulse" />}>
+                            <LanguageSelector />
+                        </Suspense>
                     </div>
                 </div>
             </div>
