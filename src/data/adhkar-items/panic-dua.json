@@ -1,0 +1,26 @@
+{
+    "title": "Panic Dua",
+    "description": "Authentic supplications for Panic Dua",
+    "category": "panic-dua",
+    "seoContent": "Authentic invocations and supplications for Panic Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "panic-dua-1",
+            "slug": "panic-dua-1",
+            "title": "Dua 245",
+            "arabic": "((لاَ إِلَهَ إِلاَّ اللَّهُ!)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "245.mp3"
+        }
+    ]
+}

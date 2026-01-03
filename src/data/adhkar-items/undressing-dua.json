@@ -1,0 +1,26 @@
+{
+    "title": "Undressing Dua",
+    "description": "Authentic supplications for Undressing Dua",
+    "category": "undressing-dua",
+    "seoContent": "Authentic invocations and supplications for Undressing Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "undressing-dua-1",
+            "slug": "undressing-dua-1",
+            "title": "Dua 9",
+            "arabic": "(بِسْمِ اللَّهِ).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "9.mp3"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+# Task List
+
+- [x] Initialize Next.js project with TypeScript, Tailwind, and App Router <!-- id: 0 -->
+- [x] ... (Phase 1-3 tasks)
+- [x] **Bulk Data Migration:** (Completed)
+- [x] **Audio Assets:** (Completed)
+- [x] **Consolidation:** (Completed)
+- [x] **Audit & Fix:** (Completed)
+- [x] **Complete Library Migration:** (Completed)
+- [x] **Category Cleanup & SEO:**
+    - [x] Update `migrate-all.js` with comprehensive Arabic-to-English map. <!-- id: 61 -->
+    - [x] Execute migration to rename files and content titles. <!-- id: 62 -->
+    - [x] Verify legacy "Adhkar Collection-X" files are deleted. <!-- id: 63 -->
+    - [x] Verify new SEO-friendly URLs (e.g., `/duas/wind-dua`). <!-- id: 64 -->
+- [x] **E-E-A-T (Trust):**
+    - [x] Create `/about` page with Methodology & Digital Waqf statement. <!-- id: 65 -->
+- [x] **Final Polish:**
+    - [x] Identified remaining generic `Adhkar Collection-100+` items. <!-- id: 66 -->
+    - [x] Mapped 30+ additional categories (Travel, Animal, General Manners). <!-- id: 67 -->
+    - [x] Re-ran migration to eliminate generic titles completely. <!-- id: 68 -->
+    - [x] **Zero Generic Titles:** Confirmed removal of collections 14-96. <!-- id: 69 -->

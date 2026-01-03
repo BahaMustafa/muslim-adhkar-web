@@ -1,0 +1,26 @@
+{
+    "title": "Reply To Favor Dua",
+    "description": "Authentic supplications for Reply To Favor Dua",
+    "category": "reply-to-favor-dua",
+    "seoContent": "Authentic invocations and supplications for Reply To Favor Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "reply-to-favor-dua-1",
+            "slug": "reply-to-favor-dua-1",
+            "title": "Dua 198",
+            "arabic": "((جَزَاكَ اللَّهُ خَيْراً)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "198.mp3"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "title": "Slaughtering Animal Dua",
+    "description": "Authentic supplications for Slaughtering Animal Dua",
+    "category": "slaughtering-animal-dua",
+    "seoContent": "Authentic invocations and supplications for Slaughtering Animal Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "slaughtering-animal-dua-1",
+            "slug": "slaughtering-animal-dua-1",
+            "title": "Dua 246",
+            "arabic": "((بِسْمِ اللَّهِ وَاللَّهُ أَكْبَرُ [اللَّهُمَّ مِنْكَ وَلَكَ] اللَّهُمَّ تَقَبَّلْ مِنِّي)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "246.mp3"
+        }
+    ]
+}

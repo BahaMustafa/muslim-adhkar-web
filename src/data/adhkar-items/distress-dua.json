@@ -1,0 +1,77 @@
+{
+    "title": "Distress Dua",
+    "description": "Authentic supplications for Distress Dua",
+    "category": "distress-dua",
+    "seoContent": "Authentic invocations and supplications for Distress Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "distress-dua-1",
+            "slug": "distress-dua-1",
+            "title": "Dua 122",
+            "arabic": "((لاَ إِلَهَ إِلاَّ اللَّهُ الْعَظِيمُ الْحَلِيمُ، لاَ إِلَهَ إِلاَّ اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لاَ إِلَهَ إِلاَّ اللَّهُ رَبُّ السَّمَوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "122.mp3"
+        },
+        {
+            "id": "distress-dua-2",
+            "slug": "distress-dua-2",
+            "title": "Dua 123",
+            "arabic": "((اللَّهُمَّ رَحْمَتَكَ أَرْجُو، فَلاَ تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ، لاَ إِلَهَ إِلاَّ أَنْتَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "123.mp3"
+        },
+        {
+            "id": "distress-dua-3",
+            "slug": "distress-dua-3",
+            "title": "Dua 124",
+            "arabic": "((لاَ إِلَهَ إِلاَّ أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظّالِمِينَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "124.mp3"
+        },
+        {
+            "id": "distress-dua-4",
+            "slug": "distress-dua-4",
+            "title": "Dua 125",
+            "arabic": "((اللَّهُ اللَّهُ رَبِّي لاَ أُشْرِكُ بِهِ شَيْئاً)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "125.mp3"
+        }
+    ]
+}

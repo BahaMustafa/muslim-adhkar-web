@@ -1,0 +1,43 @@
+{
+    "title": "Visiting Sick Dua",
+    "description": "Authentic supplications for Visiting Sick Dua",
+    "category": "visiting-sick-dua",
+    "seoContent": "Authentic invocations and supplications for Visiting Sick Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "visiting-sick-dua-1",
+            "slug": "visiting-sick-dua-1",
+            "title": "Dua 147",
+            "arabic": "((لاَ بأْسَ طَهُورٌ إِنْ شَاءَ اللَّهُ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "147.mp3"
+        },
+        {
+            "id": "visiting-sick-dua-2",
+            "slug": "visiting-sick-dua-2",
+            "title": "Dua 148",
+            "arabic": "((أَسْأَلُ اللَّهَ الْعَظيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفيَكَ)) (سبع مرات).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "148.mp3"
+        }
+    ]
+}

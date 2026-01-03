@@ -1,0 +1,26 @@
+{
+    "title": "Whispering In Prayer Dua",
+    "description": "Authentic supplications for Whispering In Prayer Dua",
+    "category": "whispering-in-prayer-dua",
+    "seoContent": "Authentic invocations and supplications for Whispering In Prayer Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "whispering-in-prayer-dua-1",
+            "slug": "whispering-in-prayer-dua-1",
+            "title": "Dua 138",
+            "arabic": "((أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيمِ، وَاتْفُلْ عَلَى يَسَارِكَ (ثلاثاً))).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "138.mp3"
+        }
+    ]
+}

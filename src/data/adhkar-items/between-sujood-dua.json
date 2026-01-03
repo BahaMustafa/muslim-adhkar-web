@@ -1,0 +1,43 @@
+{
+    "title": "Between Sujood Dua",
+    "description": "Authentic supplications for Between Sujood Dua",
+    "category": "between-sujood-dua",
+    "seoContent": "Authentic invocations and supplications for Between Sujood Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "between-sujood-dua-1",
+            "slug": "between-sujood-dua-1",
+            "title": "Dua 48",
+            "arabic": "((رَبِّ اغْفِرْ لِي، رَبِّ اغْفِرْ لِي)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "48.mp3"
+        },
+        {
+            "id": "between-sujood-dua-2",
+            "slug": "between-sujood-dua-2",
+            "title": "Dua 49",
+            "arabic": "((اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَاجْبُرْنِي، وَعَافِنِي، وَارْزُقْنِي، وَارْفَعْنِي)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "49.mp3"
+        }
+    ]
+}

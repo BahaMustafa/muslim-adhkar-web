@@ -1,0 +1,51 @@
+{
+    "title": "Adhkar After Salah",
+    "description": "Authentic Adhkar to be recited immediately after the Fardhu prayers.",
+    "category": "after-salah",
+    "seoContent": "The Adhkar after Fardhu Salah (obligatory prayers) are among the most rewarded forms of remembrance. Following the practice of the Prophet Muhammad (ﷺ), these supplications include Tasbih, Tahmid, and Takbir, as well as specific verses like Ayatul Kursi. Reciting these immediately after the Taslim provides a spiritual bridge between the prayer and daily life. Our database follows the authentic narrations found in Sahih Muslim and Sunan an-Nasa'i.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "astaghfirullah",
+            "slug": "astaghfirullah",
+            "title": "Astaghfirullah (I seek forgiveness from Allah)",
+            "arabic": "أَسْتَغْفِرُ اللَّهَ، أَسْتَغْفِرُ اللَّهَ، أَسْتَغْفِرُ اللَّهَ",
+            "transliteration": "Astaghfirullah, Astaghfirullah, Astaghfirullah",
+            "translation": "I seek the forgiveness of Allah (three times).",
+            "count": 3,
+            "source": {
+                "collection": "Sahih Muslim",
+                "reference": "591"
+            },
+            "virtue": "The Prophet (ﷺ) would recite this immediately after Taslim."
+        },
+        {
+            "id": "allahumma-antas-salam",
+            "slug": "allahumma-antas-salam",
+            "title": "Allahumma Antas-Salam",
+            "arabic": "اللَّهُمَّ أَنْتَ السَّلاَمُ وَمِنْكَ السَّلاَمُ تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَالإِكْرَامِ",
+            "transliteration": "Allahumma Antas-Salam wa minkas-salam, tabarakta ya Dhal-Jalali wal-Ikram.",
+            "translation": "O Allah, You are Peace and from You is peace. Blessed are You, O Owner of Majesty and Honor.",
+            "count": 1,
+            "source": {
+                "collection": "Sahih Muslim",
+                "reference": "592"
+            },
+            "virtue": "Recited immediately after Astaghfirullah."
+        },
+        {
+            "id": "tasbih-fatima-sequence",
+            "slug": "tasbih-fatima-sequence",
+            "title": "Tasbih, Tahmid, Takbir & Tahlil",
+            "arabic": "سُبْحَانَ اللهِ (٣٣)\nالْحَمْدُ للهِ (٣٣)\nاللهُ أَكْبَرُ (٣٣)\nلاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ (١)",
+            "transliteration": "SubhanAllah (33x), Alhamdulillah (33x), Allahu Akbar (33x). La ilaha illallahu wahdahu la sharika lahu, lahul-mulku wa lahul-hamdu wa huwa 'ala kulli shayin qadir (1x).",
+            "translation": "Glory is to Allah (33 times). Praise is to Allah (33 times). Allah is the Most Great (33 times). There is none worthy of worship but Allah alone, Who has no partner. His is the dominion and His is the praise, and He is Able to do all things (1 time).",
+            "count": 100,
+            "source": {
+                "collection": "Sahih Muslim",
+                "reference": "597"
+            },
+            "virtue": "He who recites this after every prayer, his sins will be forgiven even if they were as much as the foam of the sea."
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "title": "After Rain Dhikr",
+    "description": "Authentic supplications for After Rain Dhikr",
+    "category": "after-rain-dhikr",
+    "seoContent": "Authentic invocations and supplications for After Rain Dhikr. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "after-rain-dhikr-1",
+            "slug": "after-rain-dhikr-1",
+            "title": "Dua 173",
+            "arabic": "((مُطِرْنَا بِفَضْلِ اللَّهِ وَرَحْمَتِهِ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "173.mp3"
+        }
+    ]
+}

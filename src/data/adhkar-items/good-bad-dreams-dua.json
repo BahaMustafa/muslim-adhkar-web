@@ -1,0 +1,43 @@
+{
+    "title": "Good Bad Dreams Dua",
+    "description": "Authentic supplications for Good Bad Dreams Dua",
+    "category": "good-bad-dreams-dua",
+    "seoContent": "Authentic invocations and supplications for Good Bad Dreams Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "good-bad-dreams-dua-1",
+            "slug": "good-bad-dreams-dua-1",
+            "title": "Dua 114",
+            "arabic": "[ (يَنْفُثُ عَنْ يَسَارِهِ (ثلاثاً)) - (يَسْتَعِيذُ بِاللَّهِ مِنَ الشَّيطَانِ وَمِنْ شَرِّ مَا رَأَى (ثَلاَثَ مَرَّاتٍ)) - ((لاَ يُحَدِّثْ بِهَا أَحَداً)) - ((يَــتَحَوَّلُ عَنْ جَنْبِهِ الَّذِي كَانَ عَلَيْهِ)) ]",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "114.mp3"
+        },
+        {
+            "id": "good-bad-dreams-dua-2",
+            "slug": "good-bad-dreams-dua-2",
+            "title": "Dua 115",
+            "arabic": "((ويَقُومُ يُصَلِّي إِنْ أَرَادَ ذَلِكَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "115.mp3"
+        }
+    ]
+}

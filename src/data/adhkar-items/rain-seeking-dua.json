@@ -1,0 +1,60 @@
+{
+    "title": "Rain Seeking Dua",
+    "description": "Authentic supplications for Rain Seeking Dua",
+    "category": "rain-seeking-dua",
+    "seoContent": "Authentic invocations and supplications for Rain Seeking Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "rain-seeking-dua-1",
+            "slug": "rain-seeking-dua-1",
+            "title": "Dua 169",
+            "arabic": "((اللَّهُمَّ اسْقِنَا غَيْثاً مُغِيثاً مَرِيئاً مَرِيعاً، نَافِعاً غَيْرَ ضَارٍّ، عَاجِلاً غَيْرَ آجِلٍ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "169.mp3"
+        },
+        {
+            "id": "rain-seeking-dua-2",
+            "slug": "rain-seeking-dua-2",
+            "title": "Dua 170",
+            "arabic": "((اللَّهُمَّ أَغِثْنَا، اللَّهُمَّ أَغِثْنَا، اللَّهُمَّ أَغِثْنَا)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "170.mp3"
+        },
+        {
+            "id": "rain-seeking-dua-3",
+            "slug": "rain-seeking-dua-3",
+            "title": "Dua 171",
+            "arabic": "((اللَّهُمَّ اسْقِ عِبَادَكَ، وَبَهَائِمَكَ، وَانْشُرْ رَحْمَتَكَ، وَأَحْيِي بَلَدَكَ الْمَيِّتَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "171.mp3"
+        }
+    ]
+}

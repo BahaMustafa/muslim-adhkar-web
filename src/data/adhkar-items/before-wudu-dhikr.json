@@ -1,0 +1,26 @@
+{
+    "title": "Before Wudu Dhikr",
+    "description": "Authentic supplications for Before Wudu Dhikr",
+    "category": "before-wudu-dhikr",
+    "seoContent": "Authentic invocations and supplications for Before Wudu Dhikr. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "before-wudu-dhikr-1",
+            "slug": "before-wudu-dhikr-1",
+            "title": "Dua 12",
+            "arabic": "(بِسْمِ اللَّهِ).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "12.mp3"
+        }
+    ]
+}

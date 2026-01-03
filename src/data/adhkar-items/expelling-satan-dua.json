@@ -1,0 +1,60 @@
+{
+    "title": "Expelling Satan Dua",
+    "description": "Authentic supplications for Expelling Satan Dua",
+    "category": "expelling-satan-dua",
+    "seoContent": "Authentic invocations and supplications for Expelling Satan Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "expelling-satan-dua-1",
+            "slug": "expelling-satan-dua-1",
+            "title": "Dua 141",
+            "arabic": "((الْاسْتِعَاذَةُ بِاللَّهِ مِنْهُ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "141.mp3"
+        },
+        {
+            "id": "expelling-satan-dua-2",
+            "slug": "expelling-satan-dua-2",
+            "title": "Dua 142",
+            "arabic": "((الْأَذَانُ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "142.mp3"
+        },
+        {
+            "id": "expelling-satan-dua-3",
+            "slug": "expelling-satan-dua-3",
+            "title": "Dua 143",
+            "arabic": "((الْأَذْكَارُ وَقِرَاءَةُ الْقُرْآنِ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "143.mp3"
+        }
+    ]
+}

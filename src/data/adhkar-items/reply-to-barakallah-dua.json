@@ -1,0 +1,26 @@
+{
+    "title": "Reply To Barakallah Dua",
+    "description": "Authentic supplications for Reply To Barakallah Dua",
+    "category": "reply-to-barakallah-dua",
+    "seoContent": "Authentic invocations and supplications for Reply To Barakallah Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "reply-to-barakallah-dua-1",
+            "slug": "reply-to-barakallah-dua-1",
+            "title": "Dua 204",
+            "arabic": "((وَفِيكَ بَارَكَ اللَّهُ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "204.mp3"
+        }
+    ]
+}

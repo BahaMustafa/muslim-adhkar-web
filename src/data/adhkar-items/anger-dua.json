@@ -1,0 +1,26 @@
+{
+    "title": "Anger Dua",
+    "description": "Authentic supplications for Anger Dua",
+    "category": "anger-dua",
+    "seoContent": "Authentic invocations and supplications for Anger Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "anger-dua-1",
+            "slug": "anger-dua-1",
+            "title": "Dua 193",
+            "arabic": "((أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "193.mp3"
+        }
+    ]
+}

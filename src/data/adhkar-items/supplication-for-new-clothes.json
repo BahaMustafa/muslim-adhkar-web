@@ -1,0 +1,43 @@
+{
+    "title": "Supplication For New Clothes",
+    "description": "Authentic supplications for Supplication For New Clothes",
+    "category": "supplication-for-new-clothes",
+    "seoContent": "Authentic invocations and supplications for Supplication For New Clothes. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "supplication-for-new-clothes-1",
+            "slug": "supplication-for-new-clothes-1",
+            "title": "Dua 7",
+            "arabic": "(تُبْلِي وَيُخْلِفُ اللَّهُ تَعَالَى)",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "7.mp3"
+        },
+        {
+            "id": "supplication-for-new-clothes-2",
+            "slug": "supplication-for-new-clothes-2",
+            "title": "Dua 8",
+            "arabic": "(اِلْبَسْ جَدِيداً وَعِشْ حَمِيداً وَمُتْ شَهِيداً).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "8.mp3"
+        }
+    ]
+}

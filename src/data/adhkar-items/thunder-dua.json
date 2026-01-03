@@ -1,0 +1,26 @@
+{
+    "title": "Thunder Dua",
+    "description": "Authentic supplications for Thunder Dua",
+    "category": "thunder-dua",
+    "seoContent": "Authentic invocations and supplications for Thunder Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "thunder-dua-1",
+            "slug": "thunder-dua-1",
+            "title": "Dua 168",
+            "arabic": "((سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلاَئِكةُ مِنْ خِيفَتِهِ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "168.mp3"
+        }
+    ]
+}

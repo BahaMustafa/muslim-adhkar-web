@@ -1,0 +1,26 @@
+{
+    "title": "Difficult Matter Dua",
+    "description": "Authentic supplications for Difficult Matter Dua",
+    "category": "difficult-matter-dua",
+    "seoContent": "Authentic invocations and supplications for Difficult Matter Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "difficult-matter-dua-1",
+            "slug": "difficult-matter-dua-1",
+            "title": "Dua 139",
+            "arabic": "((اللَّهُمَّ لاَ سَهْلَ إِلاَّ مَا جَعَلْتَهُ سَهْلاً، وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلاً)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "139.mp3"
+        }
+    ]
+}

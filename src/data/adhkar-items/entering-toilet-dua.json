@@ -1,0 +1,26 @@
+{
+    "title": "Entering Toilet Dua",
+    "description": "Authentic supplications for Entering Toilet Dua",
+    "category": "entering-toilet-dua",
+    "seoContent": "Authentic invocations and supplications for Entering Toilet Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "entering-toilet-dua-1",
+            "slug": "entering-toilet-dua-1",
+            "title": "Dua 10",
+            "arabic": "([بِسْمِ اللَّهِ] اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبْثِ وَالْخَبائِث).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "10.mp3"
+        }
+    ]
+}

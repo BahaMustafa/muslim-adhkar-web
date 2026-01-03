@@ -1,0 +1,26 @@
+{
+    "title": "Exiting Toilet Dua",
+    "description": "Authentic supplications for Exiting Toilet Dua",
+    "category": "exiting-toilet-dua",
+    "seoContent": "Authentic invocations and supplications for Exiting Toilet Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "exiting-toilet-dua-1",
+            "slug": "exiting-toilet-dua-1",
+            "title": "Dua 11",
+            "arabic": "(غُفْرَانَكَ).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "11.mp3"
+        }
+    ]
+}

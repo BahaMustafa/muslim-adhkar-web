@@ -1,0 +1,26 @@
+{
+    "title": "Dhikr After Witr",
+    "description": "Authentic supplications for Dhikr After Witr",
+    "category": "dhikr-after-witr",
+    "seoContent": "Authentic invocations and supplications for Dhikr After Witr. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "dhikr-after-witr-1",
+            "slug": "dhikr-after-witr-1",
+            "title": "Dua 119",
+            "arabic": "((سُبْحَانَ المَلِكِ القُدُّوسِ)) ثلاثَ مرَّاتٍ والثَّالِثَةُ يَجْهَرُ بها ويَمُدُّ بها صَوتَهُ يقولُ: [رَبِّ الْمَلاَئِكَةِ وَالرُّوحِ])).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "119.mp3"
+        }
+    ]
+}

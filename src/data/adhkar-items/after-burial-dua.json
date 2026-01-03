@@ -1,0 +1,26 @@
+{
+    "title": "After Burial Dua",
+    "description": "Authentic supplications for After Burial Dua",
+    "category": "after-burial-dua",
+    "seoContent": "Authentic invocations and supplications for After Burial Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "after-burial-dua-1",
+            "slug": "after-burial-dua-1",
+            "title": "Dua 164",
+            "arabic": "((اللَّهُمَّ اغْفِرْ لَهُ، اللَّهُمَّ ثَبِّتْهُ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "164.mp3"
+        }
+    ]
+}

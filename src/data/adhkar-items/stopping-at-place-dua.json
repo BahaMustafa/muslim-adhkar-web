@@ -1,0 +1,26 @@
+{
+    "title": "Stopping At Place Dua",
+    "description": "Authentic supplications for Stopping At Place Dua",
+    "category": "stopping-at-place-dua",
+    "seoContent": "Authentic invocations and supplications for Stopping At Place Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "stopping-at-place-dua-1",
+            "slug": "stopping-at-place-dua-1",
+            "title": "Dua 216",
+            "arabic": "((أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "216.mp3"
+        }
+    ]
+}

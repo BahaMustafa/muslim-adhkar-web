@@ -1,0 +1,26 @@
+{
+    "title": "Stumbling Vehicle Dua",
+    "description": "Authentic supplications for Stumbling Vehicle Dua",
+    "category": "stumbling-vehicle-dua",
+    "seoContent": "Authentic invocations and supplications for Stumbling Vehicle Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "stumbling-vehicle-dua-1",
+            "slug": "stumbling-vehicle-dua-1",
+            "title": "Dua 210",
+            "arabic": "((بِسْمِ اللَّهِ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "210.mp3"
+        }
+    ]
+}

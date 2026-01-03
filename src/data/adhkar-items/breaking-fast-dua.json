@@ -1,0 +1,43 @@
+{
+    "title": "Breaking Fast Dua",
+    "description": "Authentic supplications for Breaking Fast Dua",
+    "category": "breaking-fast-dua",
+    "seoContent": "Authentic invocations and supplications for Breaking Fast Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "breaking-fast-dua-1",
+            "slug": "breaking-fast-dua-1",
+            "title": "Dua 176",
+            "arabic": "((ذَهَبَ الظَّمَأُ وَابْتَلَّتِ العُرُوقُ، وَثَبَتَ الْأَجْرُ إِنْ شَاءَ اللَّهُ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "176.mp3"
+        },
+        {
+            "id": "breaking-fast-dua-2",
+            "slug": "breaking-fast-dua-2",
+            "title": "Dua 177",
+            "arabic": "((اللَّهُمَّ إِنِّي أَسْأَلُكَ بِرَحْمَتِكَ الَّتِي وَسِعَتْ كُلَّ شَيْءٍ أَنْ تَغْفِرَ لِي)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "177.mp3"
+        }
+    ]
+}

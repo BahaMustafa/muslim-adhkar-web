@@ -1,0 +1,43 @@
+{
+    "title": "Funeral Prayer Child Dua",
+    "description": "Authentic supplications for Funeral Prayer Child Dua",
+    "category": "funeral-prayer-child-dua",
+    "seoContent": "Authentic invocations and supplications for Funeral Prayer Child Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "funeral-prayer-child-dua-1",
+            "slug": "funeral-prayer-child-dua-1",
+            "title": "Dua 160",
+            "arabic": "((اللَّهُمَّ أَعِذْهُ مِنْ عَذَابِ القَبْرِ)) وإن قال: ((اللَّهُمَّ اجْعَلْهُ فَرَطاً وَذُخْراً لِوَالِدَيْهِ، وَشَفِيعاً مُجَاباً، اللَّهُمَّ ثَقِّلْ بِهِ مَوَازِينَهُمَا، وَأَعْظِمْ بِهِ أُجورَهُمَا، وَأَلْحِقْهُ بِصَالِحِ الْمُؤْمِنِينَ، وَاجْعَلْهُ فِي كَفَالَةِ إِبْرَاهِيمَ، وَقِهِ بِرَحْمَتِكَ عَذَابَ الْجَحِيمِ، وَأَبْدِلْهُ دَاراً خَيْراً مِنْ دَارِهِ، وَأَهْلاً خَيْراً مِنْ أَهْلِهِ، اللَّهُمَّ اغْفِرْ لِأَسْلاَفِنَا، وَأَفْرَاطِنَا، وَمَنْ سَبَقَنَا بِالْإِيمَانِ)) إن قال ذلك فَحَسَنٌ.",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "160.mp3"
+        },
+        {
+            "id": "funeral-prayer-child-dua-2",
+            "slug": "funeral-prayer-child-dua-2",
+            "title": "Dua 161",
+            "arabic": "((اللَّهُمَّ اجْعَلْهُ لَنَا فَرَطاً، وَسَلَفاً، وَأَجْراً)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "161.mp3"
+        }
+    ]
+}

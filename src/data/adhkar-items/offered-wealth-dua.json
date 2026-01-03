@@ -1,0 +1,26 @@
+{
+    "title": "Offered Wealth Dua",
+    "description": "Authentic supplications for Offered Wealth Dua",
+    "category": "offered-wealth-dua",
+    "seoContent": "Authentic invocations and supplications for Offered Wealth Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "offered-wealth-dua-1",
+            "slug": "offered-wealth-dua-1",
+            "title": "Dua 201",
+            "arabic": "((بَارَكَ اللَّهُ لَكَ فِي أَهْلِكَ وَمَالِكَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "201.mp3"
+        }
+    ]
+}

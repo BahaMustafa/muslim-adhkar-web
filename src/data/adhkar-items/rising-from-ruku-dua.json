@@ -1,0 +1,60 @@
+{
+    "title": "Rising From Ruku Dua",
+    "description": "Authentic supplications for Rising From Ruku Dua",
+    "category": "rising-from-ruku-dua",
+    "seoContent": "Authentic invocations and supplications for Rising From Ruku Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "rising-from-ruku-dua-1",
+            "slug": "rising-from-ruku-dua-1",
+            "title": "Dua 38",
+            "arabic": "((سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "38.mp3"
+        },
+        {
+            "id": "rising-from-ruku-dua-2",
+            "slug": "rising-from-ruku-dua-2",
+            "title": "Dua 39",
+            "arabic": "((رَبَّنَا وَلَكَ الْحَمْدُ، حَمْداً كَثيراً طَيِّباً مُبارَكاً فِيهِ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "39.mp3"
+        },
+        {
+            "id": "rising-from-ruku-dua-3",
+            "slug": "rising-from-ruku-dua-3",
+            "title": "Dua 40",
+            "arabic": "((مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ، وَمَا بَيْنَهُمَا، وَمِلْءَ مَا شِئْتَ مِنْ شَيءٍ بَعْدُ. أَهلَ الثَّناءِ وَالْمَجْدِ، أَحَقُّ مَا قَالَ الْعَبْدُ، وَكُلُّنَا لَكَ عَبْدٌ. اللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الجَدِّ مِنْكَ الجَدُّ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "40.mp3"
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "title": "Ruku Dua",
+    "description": "Authentic supplications for Ruku Dua",
+    "category": "ruku-dua",
+    "seoContent": "Authentic invocations and supplications for Ruku Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "ruku-dua-1",
+            "slug": "ruku-dua-1",
+            "title": "Dua 33",
+            "arabic": "((سُبْحانَ رَبِّيَ الْعَظِيمِ)). ثلاث مرَّاتٍ.",
+            "transliteration": "",
+            "translation": "",
+            "count": 3,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "33.mp3"
+        },
+        {
+            "id": "ruku-dua-2",
+            "slug": "ruku-dua-2",
+            "title": "Dua 34",
+            "arabic": "((سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "34.mp3"
+        },
+        {
+            "id": "ruku-dua-3",
+            "slug": "ruku-dua-3",
+            "title": "Dua 35",
+            "arabic": "((سُبُّوُحٌ، قُدُّوسٌ، رَبُّ المَلاَئِكَةِ وَالرُّوحِ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "35.mp3"
+        },
+        {
+            "id": "ruku-dua-4",
+            "slug": "ruku-dua-4",
+            "title": "Dua 36",
+            "arabic": "((اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، خَشَعَ لَكَ سَمْعِي، وَبَصَرِي، وَمُخِّي، وَعَــــظْمِي، وَعَصَبِي، [وَمَا استَقَلَّتْ بِهِ قَدَمِي])).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "36.mp3"
+        },
+        {
+            "id": "ruku-dua-5",
+            "slug": "ruku-dua-5",
+            "title": "Dua 37",
+            "arabic": "((سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "37.mp3"
+        }
+    ]
+}

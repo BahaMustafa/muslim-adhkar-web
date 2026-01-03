@@ -1,0 +1,26 @@
+{
+    "title": "Kaffara Majlis",
+    "description": "Authentic supplications for Kaffara Majlis",
+    "category": "kaffara-majlis",
+    "seoContent": "Authentic invocations and supplications for Kaffara Majlis. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "kaffara-majlis-1",
+            "slug": "kaffara-majlis-1",
+            "title": "Dua 196",
+            "arabic": "((سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "196.mp3"
+        }
+    ]
+}

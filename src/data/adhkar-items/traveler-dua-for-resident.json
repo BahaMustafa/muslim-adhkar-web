@@ -1,0 +1,26 @@
+{
+    "title": "Traveler Dua For Resident",
+    "description": "Authentic supplications for Traveler Dua For Resident",
+    "category": "traveler-dua-for-resident",
+    "seoContent": "Authentic invocations and supplications for Traveler Dua For Resident. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "traveler-dua-for-resident-1",
+            "slug": "traveler-dua-for-resident-1",
+            "title": "Dua 211",
+            "arabic": "((أَسْتَوْدِعُكُمُ اللَّهَ الَّذِي لاَ تَضِيعُ وَدَائِعُهُ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "211.mp3"
+        }
+    ]
+}

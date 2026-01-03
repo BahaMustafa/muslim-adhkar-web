@@ -1,0 +1,43 @@
+{
+    "title": "Resident Dua For Traveler",
+    "description": "Authentic supplications for Resident Dua For Traveler",
+    "category": "resident-dua-for-traveler",
+    "seoContent": "Authentic invocations and supplications for Resident Dua For Traveler. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "resident-dua-for-traveler-1",
+            "slug": "resident-dua-for-traveler-1",
+            "title": "Dua 212",
+            "arabic": "(( أَسْتَوْدِعُ اللَّهَ دِينَكَ، وَأَمَانَتَكَ، وَخَوَاتِيمَ عَمَلِكَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "212.mp3"
+        },
+        {
+            "id": "resident-dua-for-traveler-2",
+            "slug": "resident-dua-for-traveler-2",
+            "title": "Dua 213",
+            "arabic": "((زَوَّدَكَ اللَّهُ التَّقْوَى، وَغَفَرَ ذَنْبَكَ، وَيَسَّرَ لَكَ الخَيْرَ حَيْثُ ما كُنْتَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "213.mp3"
+        }
+    ]
+}

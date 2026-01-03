@@ -1,0 +1,26 @@
+{
+    "title": "Guest Dua For Host",
+    "description": "Authentic supplications for Guest Dua For Host",
+    "category": "guest-dua-for-host",
+    "seoContent": "Authentic invocations and supplications for Guest Dua For Host. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "guest-dua-for-host-1",
+            "slug": "guest-dua-for-host-1",
+            "title": "Dua 182",
+            "arabic": " ((اللَّهُمَّ بَارِكْ لَهُمْ فِيمَا رَزَقْتَهُم، وَاغْفِرْ لَهُمْ وَارْحَمْهُمْ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "182.mp3"
+        }
+    ]
+}

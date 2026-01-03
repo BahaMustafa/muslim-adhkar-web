@@ -1,0 +1,26 @@
+{
+    "title": "Superstition Dua",
+    "description": "Authentic supplications for Superstition Dua",
+    "category": "superstition-dua",
+    "seoContent": "Authentic invocations and supplications for Superstition Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "superstition-dua-1",
+            "slug": "superstition-dua-1",
+            "title": "Dua 205",
+            "arabic": "((اللَّهُمَّ لاَ طَيْرَ إِلاَّ طَيْرُكَ، وَلاَ خَيْرَ إِلاَّ خَيْرُكَ، وَلاَ إِلَهَ غَيْرُكَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "205.mp3"
+        }
+    ]
+}

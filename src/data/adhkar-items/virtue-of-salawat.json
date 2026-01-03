@@ -1,0 +1,94 @@
+{
+    "title": "Virtue Of Salawat",
+    "description": "Authentic supplications for Virtue Of Salawat",
+    "category": "virtue-of-salawat",
+    "seoContent": "Authentic invocations and supplications for Virtue Of Salawat. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "virtue-of-salawat-1",
+            "slug": "virtue-of-salawat-1",
+            "title": "Dua 219",
+            "arabic": "قَالَ النَّبِيُّ صلى الله عليه وسلم: ((مَنْ صَلَّى عَلَيَّ صَلاَةً صَلَّى اللَّهُ عَلَيْهِ بِهَا عَشْراً)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "219.mp3"
+        },
+        {
+            "id": "virtue-of-salawat-2",
+            "slug": "virtue-of-salawat-2",
+            "title": "Dua 220",
+            "arabic": "وَقَالَ صلى الله عليه وسلم: ((لاَ تَجْعَلُوا قَبْرِي عِيداً وَصَلُّوا عَلَيَّ؛ فَإِنَّ صَلاَتَكُم تَبْلُغُنِي حَيْثُ كُنْتُمْ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "220.mp3"
+        },
+        {
+            "id": "virtue-of-salawat-3",
+            "slug": "virtue-of-salawat-3",
+            "title": "Dua 221",
+            "arabic": "وَقَالَ صلى الله عليه وسلم: ((الْبَخِيلُ مَنْ ذُكِرْتُ عِنْدَهُ فَلَمْ يُصَلِّ عَلَيَّ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "221.mp3"
+        },
+        {
+            "id": "virtue-of-salawat-4",
+            "slug": "virtue-of-salawat-4",
+            "title": "Dua 222",
+            "arabic": "وَقَالَ صلى الله عليه وسلم:((إِنَّ لِلَّهِ مَلاَئِكَةً سَيَّاحِينَ فِي الْأَرْضِ يُبَلِّغُونِي مِنْ أُمَّتِي السَّلاَمَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "222.mp3"
+        },
+        {
+            "id": "virtue-of-salawat-5",
+            "slug": "virtue-of-salawat-5",
+            "title": "Dua 223",
+            "arabic": "وَقَالَ صلى الله عليه وسلم: ((مَا مِنْ أَحَدٍ يُسَلِّمُ عَلَيَّ إِلاَّ رَدَّ اللَّهُ عَلَيَّ رُوحِيَ حَتَّى أَرُدَّ عَلَيْهِ السَّلاَمَ)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "223.mp3"
+        }
+    ]
+}

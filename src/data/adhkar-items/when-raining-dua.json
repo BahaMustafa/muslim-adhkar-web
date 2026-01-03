@@ -1,0 +1,26 @@
+{
+    "title": "When Raining Dua",
+    "description": "Authentic supplications for When Raining Dua",
+    "category": "when-raining-dua",
+    "seoContent": "Authentic invocations and supplications for When Raining Dua. Derived from reliable sources including Hisnul Muslim.",
+    "lastVerified": "2026-01-02",
+    "items": [
+        {
+            "id": "when-raining-dua-1",
+            "slug": "when-raining-dua-1",
+            "title": "Dua 172",
+            "arabic": "((اللَّهُمَّ صَيِّباً نَافِعاً)).",
+            "transliteration": "",
+            "translation": "",
+            "count": 1,
+            "source": {
+                "collection": "Hisnul Muslim",
+                "reference": ""
+            },
+            "virtue": "",
+            "lastVerified": "2026-01-02",
+            "authenticity": "Sahih",
+            "audioFile": "172.mp3"
+        }
+    ]
+}
