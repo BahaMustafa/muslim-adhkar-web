@@ -7,15 +7,12 @@
 - [x] **Consolidation:** (Completed)
 - [x] **Audit & Fix:** (Completed)
 - [x] **Complete Library Migration:** (Completed)
-- [x] **Category Cleanup & SEO:**
-    - [x] Update `migrate-all.js` with comprehensive Arabic-to-English map. <!-- id: 61 -->
-    - [x] Execute migration to rename files and content titles. <!-- id: 62 -->
-    - [x] Verify legacy "Adhkar Collection-X" files are deleted. <!-- id: 63 -->
-    - [x] Verify new SEO-friendly URLs (e.g., `/duas/wind-dua`). <!-- id: 64 -->
-- [x] **E-E-A-T (Trust):**
-    - [x] Create `/about` page with Methodology & Digital Waqf statement. <!-- id: 65 -->
-- [x] **Final Polish:**
-    - [x] Identified remaining generic `Adhkar Collection-100+` items. <!-- id: 66 -->
-    - [x] Mapped 30+ additional categories (Travel, Animal, General Manners). <!-- id: 67 -->
-    - [x] Re-ran migration to eliminate generic titles completely. <!-- id: 68 -->
-    - [x] **Zero Generic Titles:** Confirmed removal of collections 14-96. <!-- id: 69 -->
+- [x] **Category Cleanup & SEO:** (Completed)
+- [x] **E-E-A-T (Trust):** (Completed)
+- [x] **Final Polish:** (Completed)
+- [x] **Deployment:**
+    - [x] Create GitHub Repository. <!-- id: 70 -->
+    - [x] Push v1.0 code to `main`. <!-- id: 71 -->
+    - [x] Deploy to Vercel (Production) via CLI. <!-- id: 72 -->
+    - [x] Add Custom Domain (`muslimadhkar.com`) on Vercel. <!-- id: 73 -->
+    - [x] Configure DNS A Record on GoDaddy (`76.76.21.21`). <!-- id: 74 -->
