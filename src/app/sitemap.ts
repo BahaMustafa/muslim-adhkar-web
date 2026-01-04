@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { getAllAdhkarSlugs, getAdhkarBySlug } from '@/lib/adhkar-service'
+import { SUPPORTED_CITIES } from '@/lib/prayer-utils'
 import { categoryMap } from '@/lib/data'
 import { getChapters } from '@/lib/quran'
 import { getSurahSlug } from '@/lib/quran-mapping'
@@ -74,5 +75,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.9,
     }));
 
-    return [...staticPages, ...adhkarPages, ...categoryPages, ...quranPages];
+    // 5. Prayer Time Pages
+    const prayerPages: MetadataRoute.Sitemap = SUPPORTED_CITIES.map(city => ({
+        url: `${baseUrl}/prayer-times/${city.countrySlug}/${city.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'daily',
+        priority: 0.8,
+    }));
+
+    return [...staticPages, ...adhkarPages, ...categoryPages, ...quranPages, ...prayerPages];
 }

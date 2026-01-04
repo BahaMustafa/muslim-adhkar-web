@@ -9,19 +9,20 @@ import translations from '@/lib/translations.json';
 import { Metadata } from 'next';
 
 interface Props {
-    params: Promise<{ city: string }>;
+    params: Promise<{ country: string; city: string }>;
     searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
-    const { city: citySlug } = await params;
+    const { country: countrySlug, city: citySlug } = await params;
     const resolvedSearchParams = await searchParams;
 
+    // ... logic same ...
     const cookieStore = await cookies();
     const cookieLang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
     const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : cookieLang) as "en" | "ar";
 
-    const city = SUPPORTED_CITIES.find(c => c.slug === citySlug);
+    const city = SUPPORTED_CITIES.find(c => c.slug === citySlug && c.countrySlug === countrySlug);
     if (!city) return constructMetadata({ title: 'City Not Found', lang });
 
     const cityName = lang === 'ar' ? getCityNameAr(city.name) : city.name;
@@ -34,7 +35,7 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
         description: lang === 'ar'
             ? `احصل على مواقيت الصلاة الدقيقة لمدينة ${cityName}: الفجر، الظهر، العصر، المغرب، والعشاء.`
             : `Get accurate prayer times for ${city.name}: Fajr, Dhuhr, Asr, Maghrib, and Isha.`,
-        path: `/prayer-times/${citySlug}`,
+        path: `/prayer-times/${countrySlug}/${citySlug}`,
         lang: lang
     });
 }
@@ -47,31 +48,39 @@ function getCityNameAr(name: string): string {
         'Istanbul': 'إسطنبول',
         'London': 'لندن',
         'New York': 'نيويورك',
-        'Dubai': 'دبي'
+        'Dubai': 'دبي',
+        'Riyadh': 'الرياض',
+        'Jakarta': 'جاكرتا',
+        'Kuala Lumpur': 'كوالالمبور',
+        'Karachi': 'كراتشي',
+        'Lahore': 'لاهور',
+        'Abu Dhabi': 'أبو ظبي',
+        'Mumbai': 'مومباي'
     };
     return map[name] || name;
 }
 
 export default async function PrayerCityPage({ params, searchParams }: Props) {
-    const { city: citySlug } = await params;
+    const { country: countrySlug, city: citySlug } = await params;
     const resolvedSearchParams = await searchParams;
 
-    // Localization
+    // ... logic ...
     const cookieStore = await cookies();
     const cookieLang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
     const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : cookieLang) as "en" | "ar";
     const t = translations[lang] || translations.en;
 
-    const city = SUPPORTED_CITIES.find(c => c.slug === citySlug);
+    const city = SUPPORTED_CITIES.find(c => c.slug === citySlug && c.countrySlug === countrySlug);
 
     if (!city) {
         notFound();
     }
 
-    // Logic
+    // ... logic ...
     const prayers = getPrayerTimes(citySlug);
     if (!prayers) notFound();
 
+    // ... formatting ... (same as before)
     const formattedTimes = {
         Fajr: formatTime(prayers.fajr, lang, city.timezone),
         Sunrise: formatTime(prayers.sunrise, lang, city.timezone),
@@ -82,10 +91,8 @@ export default async function PrayerCityPage({ params, searchParams }: Props) {
     };
 
     const nextOne = getNextPrayer(prayers);
-    // Rough translation of prayer name for header
     const nextNameEn = nextOne.name;
     const isAr = lang === 'ar';
-    // Simple index mapping
     const pIndex = PRAYER_NAMES_EN.indexOf(nextNameEn);
     const nextNameDisplay = isAr ? ['الفجر', 'الشروق', 'الظهر', 'العصر', 'المغرب', 'العشاء'][pIndex] || nextNameEn : nextNameEn;
 
@@ -104,10 +111,11 @@ export default async function PrayerCityPage({ params, searchParams }: Props) {
             <div className="max-w-3xl mx-auto px-4 py-8">
                 <Breadcrumbs items={[
                     { label: t.branding.name, href: "/" },
-                    { label: pageTitle, href: `/prayer-times/${citySlug}` }
+                    { label: pageTitle, href: `/prayer-times/${countrySlug}/${citySlug}` }
                 ]} />
 
                 <main className="mt-8">
+                    {/* ... (same content) ... */}
                     <div className="text-center mb-10">
                         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                             {pageTitle}
@@ -128,6 +136,7 @@ export default async function PrayerCityPage({ params, searchParams }: Props) {
 
 export async function generateStaticParams() {
     return SUPPORTED_CITIES.map(city => ({
+        country: city.countrySlug,
         city: city.slug
     }));
 }
