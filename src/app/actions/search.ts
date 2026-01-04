@@ -6,6 +6,7 @@ import { getChapters } from '@/lib/quran';
 import { getSurahSlug } from '@/lib/quran-mapping';
 import { SearchResult } from '@/lib/search-types';
 import translations from '@/lib/translations.json';
+import { SUPPORTED_CITIES } from '@/lib/prayer-utils';
 
 let searchIndexCache: SearchResult[] | null = null;
 
@@ -100,6 +101,61 @@ export async function getSearchIndex(): Promise<SearchResult[]> {
         { id: 'source-hisnul', title: 'Hisnul Muslim', arabicTitle: 'حصن المسلم', url: `/sources/hisnul-muslim`, type: 'source', keywords: ['hisnul', 'muslim', 'حصن', 'المسلم'] },
         { id: 'source-adhkar', title: 'Adhkar Collection', arabicTitle: 'جامع الأذكار', url: `/sources`, type: 'source', keywords: ['adhkar', 'azkar', 'أذكار', 'المصادر'] }
     );
+
+    // 4. Index Prayer Times Cities
+    const getCityNameAr = (name: string): string => {
+        const map: Record<string, string> = {
+            'Mecca': 'مكة المكرمة',
+            'Medina': 'المدينة المنورة',
+            'Cairo': 'القاهرة',
+            'Istanbul': 'إسطنبول',
+            'London': 'لندن',
+            'New York': 'نيويورك',
+            'Dubai': 'دبي',
+            'Riyadh': 'الرياض',
+            'Jakarta': 'جاكرتا',
+            'Kuala Lumpur': 'كوالالمبور',
+            'Karachi': 'كراتشي',
+            'Lahore': 'لاهور',
+            'Abu Dhabi': 'أبو ظبي',
+            'Mumbai': 'مومباي',
+            'Paris': 'باريس',
+            'Berlin': 'برلين',
+            'Toronto': 'تورونتو',
+            'Sydney': 'سيدني',
+            'Dhaka': 'دكا',
+            'Lagos': 'لاغوس',
+            'Moscow': 'موسكو',
+            'Singapore': 'سنغافورة',
+            'Alexandria': 'الإسكندرية',
+            'Ankara': 'أنقرة',
+            'Los Angeles': 'لوس أنجلوس',
+            'Chicago': 'شيكاغو',
+            'Birmingham': 'برمنغهام',
+            'New Delhi': 'نيودلهي',
+        };
+        return map[name] || name;
+    };
+
+    SUPPORTED_CITIES.forEach(city => {
+        const arabicName = getCityNameAr(city.name);
+        results.push({
+            id: `prayer-${city.slug}`,
+            title: `Prayer Times ${city.name}`,
+            arabicTitle: `مواقيت الصلاة في ${arabicName}`,
+            url: `/prayer-times/${city.countrySlug}/${city.slug}`,
+            type: 'source',
+            description: `Fajr, Dhuhr, Asr, Maghrib, Isha times for ${city.name}`,
+            keywords: [
+                'prayer times', 'salah', 'namaz', 'salat',
+                'مواقيت', 'صلاة', 'أوقات',
+                city.name.toLowerCase(),
+                city.slug.replace(/-/g, ' '),
+                arabicName,
+                city.country.toLowerCase()
+            ]
+        });
+    });
 
     searchIndexCache = results;
     return results;
