@@ -23,7 +23,7 @@ export function getRecommendedAdhkar(): { label: string, href: string, label_ar:
     } else if (hour >= 15 && hour < 20) {
         return { label: "Evening Adhkar", href: "/adhkar/evening-adhkar", label_ar: "أذكار المساء" };
     } else if (hour >= 20 || hour < 4) {
-        return { label: "Sleep Adhkar", href: "/adhkar/before-sleep", label_ar: "أذكار النوم" };
+        return { label: "Sleep Adhkar", href: "/adhkar/sleeping-adhkar", label_ar: "أذكار النوم" };
     }
 
     // Default fallback (e.g. noon)

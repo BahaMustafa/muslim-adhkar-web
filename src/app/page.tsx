@@ -5,6 +5,7 @@ import { cookies } from 'next/headers';
 import translations from '@/lib/translations.json';
 import { getRecommendedAdhkar } from "@/lib/utils";
 import { BookOpen, Moon, Sun, Clock, Sparkles } from "lucide-react";
+import { HomePrayerRibbon } from "@/components/prayer/HomePrayerRibbon";
 
 export default async function Home() {
   const cookieStore = await cookies();
@@ -72,14 +73,7 @@ export default async function Home() {
                 <p className="text-slate-300 text-sm">{isAr ? 'تابع أوقات الصلاة بدقة في مدينتك' : 'Track accurate prayer times for your city'}</p>
               </div>
             </div>
-            <div className="relative z-10 mt-6 md:mt-0 flex gap-2">
-              {/* Visual placeholder for prayer time ribbon */}
-              {['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'].map((p, i) => (
-                <div key={p} className={`px-3 py-1 rounded-full text-xs font-medium border border-white/10 ${i === 2 ? 'bg-emerald-500 text-white border-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.4)]' : 'bg-white/5 text-slate-300'}`}>
-                  {isAr ? ['الفجر', 'الظهر', 'العصر', 'المغرب', 'العشاء'][i] : p}
-                </div>
-              ))}
-            </div>
+            <HomePrayerRibbon />
           </Link>
 
           {/* 2. Quran Quick Access */}
@@ -141,7 +135,7 @@ export default async function Home() {
 
         </div>
 
-      </div>
-    </main>
+      </div >
+    </main >
   );
 }
