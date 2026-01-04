@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "120.mp3"
+            "audioFile": "120.mp3",
+            "title_ar": "دعاء 120"
         },
         {
             "id": "anxiety-sorrow-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "121.mp3"
+            "audioFile": "121.mp3",
+            "title_ar": "دعاء 121"
         }
-    ]
+    ],
+    "title_ar": "دعاء الهم",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء الهم"
 }

@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "178.mp3"
+            "audioFile": "178.mp3",
+            "title_ar": "دعاء 178"
         },
         {
             "id": "before-eating-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "179.mp3"
+            "audioFile": "179.mp3",
+            "title_ar": "دعاء 179"
         }
-    ]
+    ],
+    "title_ar": "دعاء الأكل",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء الأكل"
 }

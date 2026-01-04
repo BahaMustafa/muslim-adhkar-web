@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "41.mp3"
+            "audioFile": "41.mp3",
+            "title_ar": "دعاء 41"
         },
         {
             "id": "sujood-dua-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "42.mp3"
+            "audioFile": "42.mp3",
+            "title_ar": "دعاء 42"
         },
         {
             "id": "sujood-dua-3",
@@ -54,7 +56,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "43.mp3"
+            "audioFile": "43.mp3",
+            "title_ar": "دعاء 43"
         },
         {
             "id": "sujood-dua-4",
@@ -71,7 +74,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "44.mp3"
+            "audioFile": "44.mp3",
+            "title_ar": "دعاء 44"
         },
         {
             "id": "sujood-dua-5",
@@ -88,7 +92,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "45.mp3"
+            "audioFile": "45.mp3",
+            "title_ar": "دعاء 45"
         },
         {
             "id": "sujood-dua-6",
@@ -105,7 +110,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "46.mp3"
+            "audioFile": "46.mp3",
+            "title_ar": "دعاء 46"
         },
         {
             "id": "sujood-dua-7",
@@ -122,7 +128,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "47.mp3"
+            "audioFile": "47.mp3",
+            "title_ar": "دعاء 47"
         }
-    ]
+    ],
+    "title_ar": "دعاء السجود",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء السجود"
 }

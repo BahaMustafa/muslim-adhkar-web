@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "141.mp3"
+            "audioFile": "141.mp3",
+            "title_ar": "دعاء 141"
         },
         {
             "id": "expelling-satan-dua-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "142.mp3"
+            "audioFile": "142.mp3",
+            "title_ar": "دعاء 142"
         },
         {
             "id": "expelling-satan-dua-3",
@@ -54,7 +56,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "143.mp3"
+            "audioFile": "143.mp3",
+            "title_ar": "دعاء 143"
         }
-    ]
+    ],
+    "title_ar": "دعاء طرد الشيطان",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء طرد الشيطان"
 }

@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "116.mp3"
+            "audioFile": "116.mp3",
+            "title_ar": "دعاء 116"
         },
         {
             "id": "qunut-witr-dua-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "117.mp3"
+            "audioFile": "117.mp3",
+            "title_ar": "دعاء 117"
         },
         {
             "id": "qunut-witr-dua-3",
@@ -54,7 +56,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "118.mp3"
+            "audioFile": "118.mp3",
+            "title_ar": "دعاء 118"
         }
-    ]
+    ],
+    "title_ar": "دعاء القنوت",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء القنوت"
 }

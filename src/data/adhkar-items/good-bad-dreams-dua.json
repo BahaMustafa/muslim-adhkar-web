@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "114.mp3"
+            "audioFile": "114.mp3",
+            "title_ar": "دعاء 114"
         },
         {
             "id": "good-bad-dreams-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "115.mp3"
+            "audioFile": "115.mp3",
+            "title_ar": "دعاء 115"
         }
-    ]
+    ],
+    "title_ar": "دعاء الفزع من النوم",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء الفزع من النوم"
 }

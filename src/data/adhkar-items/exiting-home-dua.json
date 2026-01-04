@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "16.mp3"
+            "audioFile": "16.mp3",
+            "title_ar": "دعاء 16"
         },
         {
             "id": "exiting-home-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "17.mp3"
+            "audioFile": "17.mp3",
+            "title_ar": "دعاء 17"
         }
-    ]
+    ],
+    "title_ar": "دعاء الخروج من المنزل",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء الخروج من المنزل"
 }

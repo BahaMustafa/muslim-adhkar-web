@@ -68,9 +68,13 @@ export async function getChapters(): Promise<QuranChapter[]> {
 }
 
 export async function getChapterDetail(id: number, lang: string = 'en'): Promise<QuranChapterDetail | null> {
+    // Validate lang against supported list, fallback to 'en' if not found (e.g. 'ar' which isn't a translation language)
+    const isSupported = QURAN_LANGUAGES.some(l => l.code === lang);
+    const fetchLang = isSupported ? lang : 'en';
+
     try {
-        const res = await fetch(`${CDN_BASE}/chapters/${lang}/${id}.json`, { next: { revalidate: 3600 } });
-        if (!res.ok) throw new Error(`Failed to fetch chapter ${id} in ${lang}`);
+        const res = await fetch(`${CDN_BASE}/chapters/${fetchLang}/${id}.json`, { next: { revalidate: 3600 } });
+        if (!res.ok) throw new Error(`Failed to fetch chapter ${id} in ${fetchLang}`);
         return await res.json();
     } catch (e) {
         console.error(e);

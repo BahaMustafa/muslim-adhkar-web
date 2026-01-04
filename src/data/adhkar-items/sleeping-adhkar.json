@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "99.mp3"
+            "audioFile": "99.mp3",
+            "title_ar": "دعاء 99"
         },
         {
             "id": "sleeping-adhkar-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "100.mp3"
+            "audioFile": "100.mp3",
+            "title_ar": "دعاء 100"
         },
         {
             "id": "sleeping-adhkar-3",
@@ -54,7 +56,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "101.mp3"
+            "audioFile": "101.mp3",
+            "title_ar": "دعاء 101"
         },
         {
             "id": "sleeping-adhkar-4",
@@ -71,7 +74,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "102.mp3"
+            "audioFile": "102.mp3",
+            "title_ar": "دعاء 102"
         },
         {
             "id": "sleeping-adhkar-5",
@@ -88,7 +92,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "103.mp3"
+            "audioFile": "103.mp3",
+            "title_ar": "دعاء 103"
         },
         {
             "id": "sleeping-adhkar-6",
@@ -105,7 +110,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "104.mp3"
+            "audioFile": "104.mp3",
+            "title_ar": "دعاء 104"
         },
         {
             "id": "sleeping-adhkar-7",
@@ -122,7 +128,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "105.mp3"
+            "audioFile": "105.mp3",
+            "title_ar": "دعاء 105"
         },
         {
             "id": "sleeping-adhkar-8",
@@ -139,7 +146,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "106.mp3"
+            "audioFile": "106.mp3",
+            "title_ar": "دعاء 106"
         },
         {
             "id": "sleeping-adhkar-9",
@@ -156,7 +164,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "107.mp3"
+            "audioFile": "107.mp3",
+            "title_ar": "دعاء 107"
         },
         {
             "id": "sleeping-adhkar-10",
@@ -173,7 +182,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "108.mp3"
+            "audioFile": "108.mp3",
+            "title_ar": "دعاء 108"
         },
         {
             "id": "sleeping-adhkar-11",
@@ -190,7 +200,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "109.mp3"
+            "audioFile": "109.mp3",
+            "title_ar": "دعاء 109"
         },
         {
             "id": "sleeping-adhkar-12",
@@ -207,7 +218,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "110.mp3"
+            "audioFile": "110.mp3",
+            "title_ar": "دعاء 110"
         },
         {
             "id": "sleeping-adhkar-13",
@@ -224,7 +236,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "111.mp3"
+            "audioFile": "111.mp3",
+            "title_ar": "دعاء 111"
         }
-    ]
+    ],
+    "title_ar": "ذكر النوم",
+    "description_ar": "من الأذكار والأدعية الصحيحة: ذكر النوم"
 }

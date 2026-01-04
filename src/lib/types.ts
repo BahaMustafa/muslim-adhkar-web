@@ -2,6 +2,7 @@ export interface Adhkar {
     id: string;
     slug: string;
     title: string;
+    title_ar?: string;
     arabic: string;
     transliteration: string;
     translation: string;
@@ -18,7 +19,9 @@ export interface Adhkar {
 
 export interface AdhkarPageData {
     title: string;
+    title_ar?: string;
     description: string;
+    description_ar?: string;
     category: string;
     seoContent?: string; // For 200+ words SEO text
     lastVerified: string;

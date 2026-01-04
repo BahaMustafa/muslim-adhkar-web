@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "38.mp3"
+            "audioFile": "38.mp3",
+            "title_ar": "دعاء 38"
         },
         {
             "id": "rising-from-ruku-dua-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "39.mp3"
+            "audioFile": "39.mp3",
+            "title_ar": "دعاء 39"
         },
         {
             "id": "rising-from-ruku-dua-3",
@@ -54,7 +56,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "40.mp3"
+            "audioFile": "40.mp3",
+            "title_ar": "دعاء 40"
         }
-    ]
+    ],
+    "title_ar": "دعاء الركوع",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء الركوع"
 }

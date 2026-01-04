@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "166.mp3"
+            "audioFile": "166.mp3",
+            "title_ar": "دعاء 166"
         },
         {
             "id": "wind-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "167.mp3"
+            "audioFile": "167.mp3",
+            "title_ar": "دعاء 167"
         }
-    ]
+    ],
+    "title_ar": "دعاء الرياح",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء الرياح"
 }

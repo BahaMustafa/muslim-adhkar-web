@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "13.mp3"
+            "audioFile": "13.mp3",
+            "title_ar": "دعاء 13"
         },
         {
             "id": "after-wudu-dhikr-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "14.mp3"
+            "audioFile": "14.mp3",
+            "title_ar": "دعاء 14"
         },
         {
             "id": "after-wudu-dhikr-3",
@@ -54,7 +56,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "15.mp3"
+            "audioFile": "15.mp3",
+            "title_ar": "دعاء 15"
         }
-    ]
+    ],
+    "title_ar": "ذكر الوضوء",
+    "description_ar": "من الأذكار والأدعية الصحيحة: ذكر الوضوء"
 }

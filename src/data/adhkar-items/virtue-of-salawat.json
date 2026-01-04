@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "219.mp3"
+            "audioFile": "219.mp3",
+            "title_ar": "دعاء 219"
         },
         {
             "id": "virtue-of-salawat-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "220.mp3"
+            "audioFile": "220.mp3",
+            "title_ar": "دعاء 220"
         },
         {
             "id": "virtue-of-salawat-3",
@@ -54,7 +56,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "221.mp3"
+            "audioFile": "221.mp3",
+            "title_ar": "دعاء 221"
         },
         {
             "id": "virtue-of-salawat-4",
@@ -71,7 +74,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "222.mp3"
+            "audioFile": "222.mp3",
+            "title_ar": "دعاء 222"
         },
         {
             "id": "virtue-of-salawat-5",
@@ -88,7 +92,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "223.mp3"
+            "audioFile": "223.mp3",
+            "title_ar": "دعاء 223"
         }
-    ]
+    ],
+    "title_ar": "ـ",
+    "description_ar": "من الأذكار والأدعية الصحيحة: ـ"
 }

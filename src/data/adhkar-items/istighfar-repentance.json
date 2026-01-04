@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "248.mp3"
+            "audioFile": "248.mp3",
+            "title_ar": "دعاء 248"
         },
         {
             "id": "istighfar-repentance-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "249.mp3"
+            "audioFile": "249.mp3",
+            "title_ar": "دعاء 249"
         },
         {
             "id": "istighfar-repentance-3",
@@ -54,7 +56,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "250.mp3"
+            "audioFile": "250.mp3",
+            "title_ar": "دعاء 250"
         },
         {
             "id": "istighfar-repentance-4",
@@ -71,7 +74,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "251.mp3"
+            "audioFile": "251.mp3",
+            "title_ar": "دعاء 251"
         },
         {
             "id": "istighfar-repentance-5",
@@ -88,7 +92,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "252.mp3"
+            "audioFile": "252.mp3",
+            "title_ar": "دعاء 252"
         },
         {
             "id": "istighfar-repentance-6",
@@ -105,7 +110,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "253.mp3"
+            "audioFile": "253.mp3",
+            "title_ar": "دعاء 253"
         }
-    ]
+    ],
+    "title_ar": "الاستغفار والتوبة",
+    "description_ar": "من الأذكار والأدعية الصحيحة: التوبة"
 }

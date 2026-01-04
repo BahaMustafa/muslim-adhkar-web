@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "180.mp3"
+            "audioFile": "180.mp3",
+            "title_ar": "دعاء 180"
         },
         {
             "id": "after-eating-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "181.mp3"
+            "audioFile": "181.mp3",
+            "title_ar": "دعاء 181"
         }
-    ]
+    ],
+    "title_ar": "دعاء الأكل",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء الأكل"
 }

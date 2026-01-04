@@ -20,7 +20,8 @@
             "virtue": "If one recites this in the evening with firm faith and dies during the night, he will enter Paradise.",
             "audioFile": "sayyid-istighfar-ghamdi.mp3",
             "reciter": "Mishary Rashid Alafasy",
-            "lastVerified": "2026-01-02"
+            "lastVerified": "2026-01-02",
+            "title_ar": "الصلاة"
         },
         {
             "id": "ayatul-kursi",
@@ -37,7 +38,8 @@
             "count": 1,
             "lastVerified": "2024-01-01",
             "audioFile": "morning-adhkar-ayatul-kursi.mp3",
-            "reciter": "Sheikh Saad Al-Ghamdi"
+            "reciter": "Sheikh Saad Al-Ghamdi",
+            "title_ar": "آية الكرسي"
         },
         {
             "id": "surah-ikhlas",
@@ -54,7 +56,8 @@
             "count": 3,
             "lastVerified": "2024-01-01",
             "audioFile": "morning-adhkar-surah-ikhlas.mp3",
-            "reciter": "Sheikh Saad Al-Ghamdi"
+            "reciter": "Sheikh Saad Al-Ghamdi",
+            "title_ar": "سورة الإخلاص"
         },
         {
             "id": "surah-falaq",
@@ -71,7 +74,8 @@
             "count": 3,
             "lastVerified": "2024-01-01",
             "audioFile": "morning-adhkar-surah-falaq.mp3",
-            "reciter": "Sheikh Saad Al-Ghamdi"
+            "reciter": "Sheikh Saad Al-Ghamdi",
+            "title_ar": "سورة الفلق"
         },
         {
             "id": "surah-nas",
@@ -88,7 +92,10 @@
             "count": 3,
             "lastVerified": "2024-01-02",
             "audioFile": "morning-adhkar-surah-nas.mp3",
-            "reciter": "Sheikh Saad Al-Ghamdi"
+            "reciter": "Sheikh Saad Al-Ghamdi",
+            "title_ar": "سورة الناس"
         }
-    ]
+    ],
+    "title_ar": "أذكار المساء",
+    "description_ar": "من الأذكار والأدعية الصحيحة: أذكار المساء"
 }

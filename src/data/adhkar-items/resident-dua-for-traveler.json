@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "212.mp3"
+            "audioFile": "212.mp3",
+            "title_ar": "دعاء 212"
         },
         {
             "id": "resident-dua-for-traveler-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "213.mp3"
+            "audioFile": "213.mp3",
+            "title_ar": "دعاء 213"
         }
-    ]
+    ],
+    "title_ar": "دعاء السفر",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء السفر"
 }

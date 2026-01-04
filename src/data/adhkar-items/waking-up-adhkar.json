@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "1.mp3"
+            "audioFile": "1.mp3",
+            "title_ar": "دعاء 1"
         },
         {
             "id": "waking-up-adhkar-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "2.mp3"
+            "audioFile": "2.mp3",
+            "title_ar": "دعاء 2"
         },
         {
             "id": "waking-up-adhkar-3",
@@ -54,7 +56,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "3.mp3"
+            "audioFile": "3.mp3",
+            "title_ar": "دعاء 3"
         },
         {
             "id": "waking-up-adhkar-4",
@@ -71,7 +74,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "4.mp3"
+            "audioFile": "4.mp3",
+            "title_ar": "دعاء 4"
         }
-    ]
+    ],
+    "title_ar": "أذكار الاستيقاظ",
+    "description_ar": "من الأذكار والأدعية الصحيحة: أذكار الاستيقاظ"
 }

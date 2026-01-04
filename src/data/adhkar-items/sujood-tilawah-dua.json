@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "50.mp3"
+            "audioFile": "50.mp3",
+            "title_ar": "دعاء 50"
         },
         {
             "id": "sujood-tilawah-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "51.mp3"
+            "audioFile": "51.mp3",
+            "title_ar": "دعاء 51"
         }
-    ]
+    ],
+    "title_ar": "دعاء السجود",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء السجود"
 }

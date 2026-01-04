@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "169.mp3"
+            "audioFile": "169.mp3",
+            "title_ar": "دعاء 169"
         },
         {
             "id": "rain-seeking-dua-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "170.mp3"
+            "audioFile": "170.mp3",
+            "title_ar": "دعاء 170"
         },
         {
             "id": "rain-seeking-dua-3",
@@ -54,7 +56,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "171.mp3"
+            "audioFile": "171.mp3",
+            "title_ar": "دعاء 171"
         }
-    ]
+    ],
+    "title_ar": "دعاء المطر",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء المطر"
 }

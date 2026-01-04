@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "53.mp3"
+            "audioFile": "53.mp3",
+            "title_ar": "دعاء 53"
         },
         {
             "id": "salawat-after-tashahhud-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "54.mp3"
+            "audioFile": "54.mp3",
+            "title_ar": "دعاء 54"
         }
-    ]
+    ],
+    "title_ar": "التشهد",
+    "description_ar": "من الأذكار والأدعية الصحيحة: التشهد"
 }

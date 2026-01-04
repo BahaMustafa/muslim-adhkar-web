@@ -1,6 +1,8 @@
+"use client";
+
 import Link from 'next/link';
 import React from 'react';
-import { ChevronRight } from 'lucide-react';
+import { useLanguage } from '@/lib/language-context';
 
 interface BreadcrumbItem {
     label: string;
@@ -9,13 +11,17 @@ interface BreadcrumbItem {
 
 interface BreadcrumbsProps {
     items: BreadcrumbItem[];
+    homeLabel?: string;
 }
 
-export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
+export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, homeLabel }) => {
+    const { t, dir } = useLanguage();
+    const displayHome = homeLabel || t.nav.home;
+
     return (
         <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-sm text-gray-500 mb-6">
             <Link href="/" className="hover:text-emerald-600 transition-colors">
-                Home
+                {displayHome}
             </Link>
             {items.map((item, index) => (
                 <React.Fragment key={item.href}>
@@ -29,7 +35,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="w-4 h-4 text-gray-400"
+                        className={`w-4 h-4 text-gray-400 ${dir === 'rtl' ? 'rotate-180' : ''}`}
                     >
                         <path d="m9 18 6-6-6-6" />
                     </svg>

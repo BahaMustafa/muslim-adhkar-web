@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "7.mp3"
+            "audioFile": "7.mp3",
+            "title_ar": "دعاء 7"
         },
         {
             "id": "supplication-for-new-clothes-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "8.mp3"
+            "audioFile": "8.mp3",
+            "title_ar": "دعاء 8"
         }
-    ]
+    ],
+    "title_ar": "دعاء دعاء",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء دعاء"
 }

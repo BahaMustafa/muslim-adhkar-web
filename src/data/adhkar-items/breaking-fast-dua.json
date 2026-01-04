@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "176.mp3"
+            "audioFile": "176.mp3",
+            "title_ar": "دعاء 176"
         },
         {
             "id": "breaking-fast-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "177.mp3"
+            "audioFile": "177.mp3",
+            "title_ar": "دعاء 177"
         }
-    ]
+    ],
+    "title_ar": "دعاء الإفطار",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء الإفطار"
 }

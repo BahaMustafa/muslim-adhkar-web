@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "240.mp3"
+            "audioFile": "240.mp3",
+            "title_ar": "دعاء 240"
         },
         {
             "id": "wonder-delight-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "241.mp3"
+            "audioFile": "241.mp3",
+            "title_ar": "دعاء 241"
         }
-    ]
+    ],
+    "title_ar": "الذكر عند التعجب والأمر السار",
+    "description_ar": "من الأذكار والأدعية الصحيحة: الذكر عند التعجب والأمر السار"
 }

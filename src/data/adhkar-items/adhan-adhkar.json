@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "22.mp3"
+            "audioFile": "22.mp3",
+            "title_ar": "دعاء 22"
         },
         {
             "id": "adhan-adhkar-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "23.mp3"
+            "audioFile": "23.mp3",
+            "title_ar": "دعاء 23"
         },
         {
             "id": "adhan-adhkar-3",
@@ -54,7 +56,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "24.mp3"
+            "audioFile": "24.mp3",
+            "title_ar": "دعاء 24"
         },
         {
             "id": "adhan-adhkar-4",
@@ -71,7 +74,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "25.mp3"
+            "audioFile": "25.mp3",
+            "title_ar": "دعاء 25"
         },
         {
             "id": "adhan-adhkar-5",
@@ -88,7 +92,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "26.mp3"
+            "audioFile": "26.mp3",
+            "title_ar": "دعاء 26"
         }
-    ]
+    ],
+    "title_ar": "ذكر أذكار",
+    "description_ar": "من الأذكار والأدعية الصحيحة: ذكر أذكار"
 }

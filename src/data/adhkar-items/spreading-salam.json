@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "224.mp3"
+            "audioFile": "224.mp3",
+            "title_ar": "دعاء 224"
         },
         {
             "id": "spreading-salam-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "225.mp3"
+            "audioFile": "225.mp3",
+            "title_ar": "دعاء 225"
         },
         {
             "id": "spreading-salam-3",
@@ -54,7 +56,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "226.mp3"
+            "audioFile": "226.mp3",
+            "title_ar": "دعاء 226"
         }
-    ]
+    ],
+    "title_ar": "إفشاء السلام",
+    "description_ar": "من الأذكار والأدعية الصحيحة: إفشاء السلام"
 }

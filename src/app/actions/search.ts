@@ -5,11 +5,12 @@ import path from 'path';
 import { getChapters } from '@/lib/quran';
 import { getSurahSlug } from '@/lib/quran-mapping';
 import { SearchResult } from '@/lib/search-types';
+import translations from '@/lib/translations.json';
 
 let searchIndexCache: SearchResult[] | null = null;
 
 export async function getSearchIndex(): Promise<SearchResult[]> {
-    if (searchIndexCache) return searchIndexCache;
+    // if (searchIndexCache) return searchIndexCache;
 
     const results: SearchResult[] = [];
 
@@ -23,18 +24,40 @@ export async function getSearchIndex(): Promise<SearchResult[]> {
             const content = fs.readFileSync(filePath, 'utf8');
             try {
                 const data = JSON.parse(content);
-                // Title is usually in pageTitle or pageDescription
                 const title = data.title || data.pageTitle;
+
                 if (title) {
-                    // Determine URL slug from filename
                     const slug = file.replace('.json', '');
+                    const transKey = slug.replaceAll('-', '_');
+                    // @ts-ignore
+                    const arabicCategoryTitle = translations.ar.category_titles[transKey];
+                    const arabicTitle = data.title_ar || arabicCategoryTitle;
+
+                    const keywords = [
+                        slug.replace(/-/g, ' '),
+                        title,
+                        arabicTitle,
+                        data.description_ar,
+                        data.description
+                    ].filter(Boolean);
+
+                    // Add items keywords
+                    if (data.items && Array.isArray(data.items)) {
+                        data.items.forEach((item: any) => {
+                            if (item.title) keywords.push(item.title);
+                            if (item.title_ar) keywords.push(item.title_ar);
+                            // Avoid adding full Arabic text to keywords, too noisy? Maybe just titles.
+                        });
+                    }
+
                     results.push({
                         id: `adhkar-${slug}`,
                         title: title,
+                        arabicTitle: arabicTitle,
                         url: `/adhkar/${slug}`,
                         type: 'adhkar',
                         description: data.description || data.pageDescription || undefined,
-                        keywords: [slug.replace(/-/g, ' ')]
+                        keywords: [...new Set(keywords)] as string[]
                     });
                 }
             } catch (e) {
@@ -53,14 +76,17 @@ export async function getSearchIndex(): Promise<SearchResult[]> {
             results.push({
                 id: `surah-${chapter.id}`,
                 title: `Surah ${chapter.transliteration} (${chapter.name})`,
+                arabicTitle: `سورة ${chapter.name}`,
                 url: `/sources/quran/${slug}`,
                 type: 'quran',
                 description: `Surah ${chapter.translation}`,
                 keywords: [
                     chapter.transliteration,
                     chapter.name,
+                    `سورة ${chapter.name}`,
                     chapter.translation,
-                    `surah ${chapter.id}`
+                    `surah ${chapter.id}`,
+                    String(chapter.id)
                 ].filter(Boolean) as string[]
             });
         }
@@ -70,9 +96,9 @@ export async function getSearchIndex(): Promise<SearchResult[]> {
 
     // 3. Static Sources
     results.push(
-        { id: 'source-quran', title: 'The Noble Quran', url: '/sources/quran', type: 'source' },
-        { id: 'source-hisnul', title: 'Hisnul Muslim', url: '/sources/hisnul-muslim', type: 'source' },
-        { id: 'source-adhkar', title: 'Adhkar Collection', url: '/sources', type: 'source' }
+        { id: 'source-quran', title: 'The Noble Quran', arabicTitle: 'القرآن الكريم', url: `/sources/quran`, type: 'source', keywords: ['quran', 'القرآن'] },
+        { id: 'source-hisnul', title: 'Hisnul Muslim', arabicTitle: 'حصن المسلم', url: `/sources/hisnul-muslim`, type: 'source', keywords: ['hisnul', 'muslim', 'حصن', 'المسلم'] },
+        { id: 'source-adhkar', title: 'Adhkar Collection', arabicTitle: 'جامع الأذكار', url: `/sources`, type: 'source', keywords: ['adhkar', 'azkar', 'أذكار', 'المصادر'] }
     );
 
     searchIndexCache = results;

@@ -6,8 +6,9 @@ import LanguageSelector from '@/components/quran/LanguageSelector';
 import AyahAudioPlayer from '@/components/quran/AyahAudioPlayer';
 import RelatedAdhkar from '@/components/quran/RelatedAdhkar';
 import { notFound, redirect } from 'next/navigation';
-
 import { getChapters } from '@/lib/quran';
+import { cookies } from 'next/headers';
+import translations from '@/lib/translations.json';
 
 export async function generateStaticParams() {
     const chapters = await getChapters();
@@ -29,13 +30,21 @@ export async function generateMetadata({ params, searchParams }: PageProps) {
     const id = getSurahIdFromSlug(surahSlug);
     if (!id) return {};
 
-    const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : 'en');
+    const cookieStore = await cookies();
+    const cookieLang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
+    const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : cookieLang) as "en" | "ar";
+    const t = translations[lang] || translations.en; // Use 'en' as default if not found
+
     const detail = await getChapterDetail(id, lang);
     if (!detail) return {};
 
+    const title = lang === 'ar' ? detail.name : detail.transliteration;
+
     return {
-        title: `${detail.transliteration} - Arabic, English Translation & Audio | MuslimAdhkar.com`,
-        description: `Read and listen to Surah ${detail.transliteration} (${detail.name}) with ${lang === 'en' ? 'English' : 'Multilingual'} translation, transliteration and audio.`,
+        title: `${title} - ${t.pages.quran.title} - ${t.branding.name}`,
+        description: lang === 'ar'
+            ? `${t.pages.quran.subtitle} ${detail.name}`
+            : `Read and listen to Surah ${detail.transliteration} (${detail.name}) with multilingual translation, transliteration and audio.`,
     };
 }
 
@@ -47,9 +56,6 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
 
     const id = getSurahIdFromSlug(surahSlug);
 
-    // Redirect number -> slug if user visits old URL? 
-    // Or just 404? User requested "reverse lookup".
-    // If id comes null, maybe try parsing number directly?
     if (!id) {
         // Fallback: is it a number?
         const parsed = parseInt(surahSlug);
@@ -60,7 +66,11 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
         notFound();
     }
 
-    const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : 'en');
+    const cookieStore = await cookies();
+    const cookieLang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
+    // NOTE: quran-json fetch might fail if we pass 'ar' as language for content, caught by getChapterDetail internal logic now
+    const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : cookieLang) as "en" | "ar";
+    const t = translations[lang] || translations.en;
 
     // Parallel Fetching
     const detailData = getChapterDetail(id, lang);
@@ -77,28 +87,33 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
         globalId: await getGlobalAyahId(id, v.id)
     })));
 
+    const mainTitle = lang === 'ar' ? detail.name : detail.transliteration;
+    const subTitle = lang === 'ar' ? detail.transliteration : detail.name;
+
     return (
         <div className="container mx-auto px-4 py-8 max-w-4xl">
-            <Breadcrumbs items={[
-                { label: "Sources", href: "/sources" },
-                { label: "Noble Quran", href: "/sources/quran" },
-                { label: detail.transliteration, href: `/sources/quran/${surahSlug}` }
-            ]} />
+            <Breadcrumbs
+                homeLabel={t.nav.home}
+                items={[
+                    { label: t.nav.sources, href: "/sources" },
+                    { label: t.pages.quran.title, href: "/sources/quran" },
+                    { label: mainTitle, href: `/sources/quran/${surahSlug}` }
+                ]} />
 
             {/* Header */}
             <div className="mt-6 mb-8 text-center border-b border-border pb-8">
                 <span className="inline-block px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-3">
-                    {detail.type} • {detail.total_verses} Verses
+                    {detail.type === 'meccan' ? t.pages.quran.meccan : t.pages.quran.medinan} • {detail.total_verses} {t.pages.quran.verses}
                 </span>
-                <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
-                    {detail.transliteration}
+                <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2 font-amiri-if-ar">
+                    {mainTitle}
                 </h1>
-                <p className="font-amiri text-3xl text-emerald-600 mb-4">{detail.name}</p>
+                <p className="text-2xl text-emerald-600 mb-4 opacity-80">{subTitle}</p>
 
                 {/* Controls */}
                 <div className="flex justify-center items-center gap-4 mt-6">
                     <div className="flex items-center gap-2">
-                        <span className="text-sm font-medium text-muted-foreground hidden sm:inline">Translation:</span>
+                        <span className="text-sm font-medium text-muted-foreground hidden sm:inline">{t.pages.quran.translation_label}</span>
                         <LanguageSelector />
                     </div>
                 </div>
@@ -133,10 +148,10 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
                         </div>
 
                         {/* Translation/Transliteration */}
-                        <div className="space-y-2 max-w-2xl">
+                        <div className="space-y-2 max-w-2xl rtl:text-right rtl:ml-auto">
                             {/* Transliteration */}
                             {verse.transliteration && (
-                                <p className="text-sm text-muted-foreground italic font-light">
+                                <p className="text-sm text-muted-foreground italic font-light dir-ltr text-left">
                                     {verse.transliteration}
                                 </p>
                             )}

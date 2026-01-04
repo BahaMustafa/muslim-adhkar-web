@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "33.mp3"
+            "audioFile": "33.mp3",
+            "title_ar": "دعاء 33"
         },
         {
             "id": "ruku-dua-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "34.mp3"
+            "audioFile": "34.mp3",
+            "title_ar": "دعاء 34"
         },
         {
             "id": "ruku-dua-3",
@@ -54,7 +56,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "35.mp3"
+            "audioFile": "35.mp3",
+            "title_ar": "دعاء 35"
         },
         {
             "id": "ruku-dua-4",
@@ -71,7 +74,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "36.mp3"
+            "audioFile": "36.mp3",
+            "title_ar": "دعاء 36"
         },
         {
             "id": "ruku-dua-5",
@@ -88,7 +92,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "37.mp3"
+            "audioFile": "37.mp3",
+            "title_ar": "دعاء 37"
         }
-    ]
+    ],
+    "title_ar": "دعاء الركوع",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء الركوع"
 }

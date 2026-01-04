@@ -3,21 +3,31 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getAdhkarBySlug, getAllAdhkarSlugs } from '@/lib/adhkar-service';
+import { cookies } from 'next/headers';
+import translations from '@/lib/translations.json';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
     const { slug } = await params;
     const pageData = await getAdhkarBySlug(slug);
+    const cookieStore = await cookies();
+    const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
 
     if (!pageData) {
         return { title: 'Adhkar Not Found' };
     }
 
+    const transKey = slug.replaceAll('-', '_');
+    // @ts-ignore
+    const titleAr = translations.ar.category_titles[transKey];
+    const displayTitle = lang === 'ar' ? (pageData.title_ar || titleAr || pageData.title) : pageData.title;
+    const description = lang === 'ar' ? (pageData.description_ar || pageData.description) : pageData.description;
+
     return {
-        title: `${pageData.title} - Authentic Daily Remembrances`,
-        description: pageData.description,
+        title: `${displayTitle} - ${lang === 'ar' ? 'أذكار مسلم' : 'Authentic Daily Remembrances'}`,
+        description: description,
         openGraph: {
-            title: pageData.title,
-            description: pageData.description,
+            title: displayTitle,
+            description: description,
             type: 'article',
             modifiedTime: pageData.lastVerified
         },
@@ -30,6 +40,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function AdhkarPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const pageData = await getAdhkarBySlug(slug);
+    const cookieStore = await cookies();
+    const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
 
     if (!pageData) {
         notFound();
@@ -37,7 +49,13 @@ export default async function AdhkarPage({ params }: { params: Promise<{ slug: s
 
     const { title, description, items, lastVerified } = pageData;
 
-    // JSON-LD Schema
+    // Localization Logic
+    const transKey = slug.replaceAll('-', '_');
+    // @ts-ignore
+    const titleAr = translations.ar.category_titles[transKey];
+    const displayTitle = lang === 'ar' ? (pageData.title_ar || titleAr || title) : title;
+    const displayDescription = lang === 'ar' ? (pageData.description_ar || description) : description;
+
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "HowTo",
@@ -56,19 +74,19 @@ export default async function AdhkarPage({ params }: { params: Promise<{ slug: s
     return (
         <div className="max-w-3xl mx-auto px-4 py-8">
             <Breadcrumbs items={[
-                { label: "Adhkar", href: "/adhkar" },
-                { label: title, href: `/adhkar/${slug}` }
+                { label: lang === 'ar' ? translations.ar.nav.adhkar : "Adhkar", href: "/adhkar" },
+                { label: displayTitle, href: `/adhkar/${slug}` }
             ]} />
 
             <header className="mb-10 text-center">
                 <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white capitalize">
-                    {title}
+                    {displayTitle}
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300">
-                    {description}
+                    {displayDescription}
                 </p>
                 <p className="text-xs text-gray-400 mt-2">
-                    Last Verified: {lastVerified}
+                    {lang === 'ar' ? 'آخر تحقق:' : 'Last Verified:'} {new Intl.DateTimeFormat(lang === 'ar' ? 'ar-EG' : 'en-US', { dateStyle: 'long' }).format(new Date(lastVerified))}
                 </p>
             </header>
 

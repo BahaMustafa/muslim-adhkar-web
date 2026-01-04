@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "136.mp3"
+            "audioFile": "136.mp3",
+            "title_ar": "دعاء 136"
         },
         {
             "id": "debt-relief-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "137.mp3"
+            "audioFile": "137.mp3",
+            "title_ar": "دعاء 137"
         }
-    ]
+    ],
+    "title_ar": "دعاء قضاء الدين",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء قضاء الدين"
 }

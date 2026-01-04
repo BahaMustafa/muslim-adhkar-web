@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "126.mp3"
+            "audioFile": "126.mp3",
+            "title_ar": "دعاء 126"
         },
         {
             "id": "meeting-enemy-ruler-dua-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "127.mp3"
+            "audioFile": "127.mp3",
+            "title_ar": "دعاء 127"
         },
         {
             "id": "meeting-enemy-ruler-dua-3",
@@ -54,7 +56,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "128.mp3"
+            "audioFile": "128.mp3",
+            "title_ar": "دعاء 128"
         }
-    ]
+    ],
+    "title_ar": "دعاء العدو",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء العدو"
 }

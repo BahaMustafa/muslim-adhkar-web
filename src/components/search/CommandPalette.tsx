@@ -5,8 +5,10 @@ import { Search, Book, FileText, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { getSearchIndex } from "@/app/actions/search";
 import { SearchResult } from "@/lib/search-types";
+import { useLanguage } from "@/lib/language-context";
 
 export default function CommandPalette() {
+    const { t, language } = useLanguage();
     const [isOpen, setIsOpen] = useState(false);
     const [query, setQuery] = useState("");
     const [index, setIndex] = useState<SearchResult[]>([]);
@@ -74,7 +76,7 @@ export default function CommandPalette() {
         const tokens = query.toLowerCase().split(/\s+/).filter(t => t.length > 0);
 
         return index.filter(item => {
-            const searchString = `${item.title} ${item.description || ''} ${item.keywords?.join(' ') || ''}`.toLowerCase();
+            const searchString = `${item.title} ${item.arabicTitle || ''} ${item.description || ''} ${item.keywords?.join(' ') || ''}`.toLowerCase();
             return tokens.every(token => searchString.includes(token));
         }).slice(0, 8);
     }, [query, index]);
@@ -131,7 +133,7 @@ export default function CommandPalette() {
                     <input
                         ref={inputRef}
                         className="flex h-10 w-full rounded-md bg-transparent py-3 text-lg outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
-                        placeholder="Search Adhkar, Surahs, Duas..."
+                        placeholder={t.search_placeholder}
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                     />
@@ -160,20 +162,26 @@ export default function CommandPalette() {
                             key={item.id}
                             onClick={() => navigateTo(item.url)}
                             onMouseEnter={() => setSelected(i)}
-                            className={`relative flex w-full cursor-default select-none items-center rounded-lg px-3 py-3 text-sm outline-none transition-colors ${i === selected ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-accent hover:text-accent-foreground"
+                            className={`relative flex w-full cursor-default select-none items-center rounded-lg px-3 py-3 text-sm outline-none transition-colors gap-3 ${i === selected ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-accent hover:text-accent-foreground"
                                 }`}
                         >
-                            <div className="mr-3 flex h-8 w-8 items-center justify-center rounded-md border border-border bg-background">
+                            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-border bg-background">
                                 {item.type === 'quran' ? <Book className="h-4 w-4" /> : <FileText className="h-4 w-4" />}
                             </div>
-                            <div className="flex flex-col items-start">
-                                <span className="font-medium">{item.title}</span>
+                            <div className="flex flex-col items-start flex-1 min-w-0">
+                                <span className="font-medium truncate w-full text-start">
+                                    {language === 'ar' && item.arabicTitle ? item.arabicTitle : item.title}
+                                </span>
                                 {item.description && (
-                                    <span className="text-xs text-muted-foreground line-clamp-1 text-left">{item.description}</span>
+                                    <span className="text-xs text-muted-foreground line-clamp-1 text-start w-full">
+                                        {item.description}
+                                    </span>
                                 )}
                             </div>
                             {item.type === 'quran' && (
-                                <span className="ml-auto text-xs text-muted-foreground bg-secondary px-1.5 py-0.5 rounded">Surah</span>
+                                <span className="text-xs text-muted-foreground bg-secondary px-1.5 py-0.5 rounded shrink-0">
+                                    {language === 'ar' ? 'سورة' : 'Surah'}
+                                </span>
                             )}
                         </button>
                     ))}

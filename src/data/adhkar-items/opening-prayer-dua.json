@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "27.mp3"
+            "audioFile": "27.mp3",
+            "title_ar": "دعاء 27"
         },
         {
             "id": "opening-prayer-dua-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "28.mp3"
+            "audioFile": "28.mp3",
+            "title_ar": "دعاء 28"
         },
         {
             "id": "opening-prayer-dua-3",
@@ -54,7 +56,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "29.mp3"
+            "audioFile": "29.mp3",
+            "title_ar": "دعاء 29"
         },
         {
             "id": "opening-prayer-dua-4",
@@ -71,7 +74,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "30.mp3"
+            "audioFile": "30.mp3",
+            "title_ar": "دعاء 30"
         },
         {
             "id": "opening-prayer-dua-5",
@@ -88,7 +92,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "31.mp3"
+            "audioFile": "31.mp3",
+            "title_ar": "دعاء 31"
         },
         {
             "id": "opening-prayer-dua-6",
@@ -105,7 +110,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "32.mp3"
+            "audioFile": "32.mp3",
+            "title_ar": "دعاء 32"
         }
-    ]
+    ],
+    "title_ar": "دعاء الصلاة",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء الصلاة"
 }

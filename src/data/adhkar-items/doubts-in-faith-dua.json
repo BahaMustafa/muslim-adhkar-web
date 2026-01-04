@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "133.mp3"
+            "audioFile": "133.mp3",
+            "title_ar": "دعاء 133"
         },
         {
             "id": "doubts-in-faith-dua-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "134.mp3"
+            "audioFile": "134.mp3",
+            "title_ar": "دعاء 134"
         },
         {
             "id": "doubts-in-faith-dua-3",
@@ -54,7 +56,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "135.mp3"
+            "audioFile": "135.mp3",
+            "title_ar": "دعاء 135"
         }
-    ]
+    ],
+    "title_ar": "دعاء من وجد في نفسه شيئاً من الشك",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء من وجد في نفسه شيئاً من الشك"
 }

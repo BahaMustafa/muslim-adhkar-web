@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "66.mp3"
+            "audioFile": "66.mp3",
+            "title_ar": "دعاء 66"
         },
         {
             "id": "dhikr-after-salam-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "67.mp3"
+            "audioFile": "67.mp3",
+            "title_ar": "دعاء 67"
         },
         {
             "id": "dhikr-after-salam-3",
@@ -54,7 +56,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "68.mp3"
+            "audioFile": "68.mp3",
+            "title_ar": "دعاء 68"
         },
         {
             "id": "dhikr-after-salam-4",
@@ -71,7 +74,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "69.mp3"
+            "audioFile": "69.mp3",
+            "title_ar": "دعاء 69"
         },
         {
             "id": "dhikr-after-salam-5",
@@ -88,7 +92,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "70.mp3"
+            "audioFile": "70.mp3",
+            "title_ar": "دعاء 70"
         },
         {
             "id": "dhikr-after-salam-6",
@@ -105,7 +110,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "71.mp3"
+            "audioFile": "71.mp3",
+            "title_ar": "دعاء 71"
         },
         {
             "id": "dhikr-after-salam-7",
@@ -122,7 +128,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "72.mp3"
+            "audioFile": "72.mp3",
+            "title_ar": "دعاء 72"
         },
         {
             "id": "dhikr-after-salam-8",
@@ -139,7 +146,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "73.mp3"
+            "audioFile": "73.mp3",
+            "title_ar": "دعاء 73"
         }
-    ]
+    ],
+    "title_ar": "الأذكار بعد السلام من الصلاة",
+    "description_ar": "من الأذكار والأدعية الصحيحة: ذكر بعد"
 }

@@ -1,0 +1,170 @@
+{
+    "en": {
+        "branding": {
+            "name": "Muslim Adhkar"
+        },
+        "nav": {
+            "home": "Home",
+            "quran": "Quran",
+            "adhkar": "Adhkar",
+            "duas": "Duas",
+            "sources": "Sources",
+            "about": "About"
+        },
+        "footer": {
+            "copyright": "© 2025 Muslim Adhkar. All rights reserved.",
+            "about": "A comprehensive collection of authentic Adhkar and Duas from the Quran and Sunnah.",
+            "links": "Quick Links",
+            "contact": "Contact",
+            "privacy": "Privacy Policy",
+            "sitemap": "Sitemap",
+            "terms": "Terms of Service"
+        },
+        "pages": {
+            "duas": {
+                "title": "Authentic Adhkar & Duas Directory",
+                "intro": "Browse our comprehensive collection of Duas and Adhkar categorized for every occasion."
+            },
+            "sources": {
+                "title": "Islamic Sources Directory",
+                "intro": "References from Quran, Sunnah, and trusted collections like Hisnul Muslim."
+            },
+            "privacy": {
+                "title": "Privacy Policy",
+                "intro": "At MuslimAdhkar.com, we prioritize your privacy above all else. This Privacy Policy outlines the types of personal information that is received and collected by us and how it is used.",
+                "promise_title": "Our Promise",
+                "promise_text": "MuslimAdhkar.com does not collect personal user data.",
+                "no_data_text": "We do not require you to create an account, log in, or provide any personal information to use our website. All Adhkar, Duas, and audio resources are freely available to everyone without tracking or data harvesting.",
+                "local_storage_title": "Local Storage",
+                "local_storage_text": "We may use your browser's local storage to save your preferences, such as your selected language (English/Arabic) or dark mode settings. This data stays on your device and is never sent to our servers.",
+                "contact_title": "Contact Us",
+                "contact_text": "If you have any questions about our Privacy Policy, please feel free to contact us via our GitHub or social media channels."
+            },
+            "quran": {
+                "title": "The Noble Quran",
+                "subtitle": "Select a Surah to read and listen.",
+                "meccan": "Meccan",
+                "medinan": "Medinan",
+                "verses": "Verses",
+                "translation_label": "Translation:"
+            }
+        },
+        "search_placeholder": "Search for Surah, Adhkar, or Dua...",
+        "home_hero_title": "Daily Adhkar & Duas",
+        "home_hero_subtitle": "Find peace in the remembrance of Allah with authentic supplications from the Quran and Sunnah.",
+        "category_titles": {
+            "morning_adhkar": "Morning Adhkar",
+            "evening_adhkar": "Evening Adhkar",
+            "after_prayer": "After Prayer",
+            "before_sleep": "Before Sleep",
+            "protection": "Protection Adhkar",
+            "quran": "Holy Quran"
+        },
+        "action_buttons": {
+            "play": "Play",
+            "copy": "Copy",
+            "count": "Count",
+            "view_full": "View Full Surah",
+            "read_more": "Read More"
+        },
+        "card_labels": {
+            "target": "Target",
+            "completed": "Completed",
+            "transliteration": "Transliteration",
+            "translation": "Translation",
+            "source": "Source",
+            "virtue": "Virtue",
+            "tap_to_count": "Tap to Count",
+            "done": "Done"
+        },
+        "home_cards": {
+            "adhkar_desc": "Daily remembrances including Morning and Evening Adhkar.",
+            "duas_desc": "Supplications categorized for various occasions.",
+            "sources_desc": "References and authorities for the content."
+        }
+    },
+    "ar": {
+        "branding": {
+            "name": "مسلم أذكار"
+        },
+        "nav": {
+            "home": "الرئيسية",
+            "quran": "القرآن الكريم",
+            "adhkar": "الأذكار",
+            "duas": "الأدعية",
+            "sources": "المصادر",
+            "about": "عن الموقع"
+        },
+        "footer": {
+            "copyright": "© ٢٠٢٥ مسلم أذكار. جميع الحقوق محفوظة.",
+            "about": "مجموعة شاملة من الأذكار والأدعية الصحيحة من الكتاب والسنة.",
+            "links": "روابط سريعة",
+            "contact": "تواصل معنا",
+            "privacy": "سياسة الخصوصية",
+            "sitemap": "خريطة الموقع",
+            "terms": "شروط الخدمة"
+        },
+        "pages": {
+            "duas": {
+                "title": "دليل الأذكار والأدعية الصحيحة",
+                "intro": "تصفح مجموعتنا الشاملة من الأدعية والأذكار المصنفة لكل مناسبة."
+            },
+            "sources": {
+                "title": "دليل المصادر الإسلامية",
+                "intro": "مراجع من القرآن الكريم والسنة النبوية ومجموعات موثوقة مثل حصن المسلم."
+            },
+            "privacy": {
+                "title": "سياسة الخصوصية",
+                "intro": "في مسلم أذكار، نضع حماية خصوصيتك في المقام الأول. توضح سياسة الخصوصية هذه أنواع المعلومات الشخصية التي نتلقاها أو نجمعها وكيفية استخدامها.",
+                "promise_title": "وعدنا",
+                "promise_text": "مسلم أذكار لا يجمع أي بيانات شخصية للمستخدمين.",
+                "no_data_text": "لا نطلب منك إنشاء حساب أو تسجيل الدخول أو تقديم أي معلومات شخصية لاستخدام موقعنا. جميع الأذكار والأدعية والموارد الصوتية متاحة مجانًا للجميع دون تتبع أو جمع للبيانات.",
+                "local_storage_title": "التخزين المحلي",
+                "local_storage_text": "قد نستخدم التخزين المحلي في متصفحك لحفظ تفضيلاتك، مثل اللغة المختارة (الإنجليزية / العربية) أو إعدادات الوضع الداكن. تظل هذه البيانات على جهازك ولا يتم إرسالها أبدًا إلى خوادمنا.",
+                "contact_title": "تواصل معنا",
+                "contact_text": "إذا كان لديك أي أسئلة حول سياسة الخصوصية، فلا تتردد في الاتصال بنا عبر GitHub أو قنوات التواصل الاجتماعي الخاصة بنا."
+            },
+            "quran": {
+                "title": "القرآن الكريم",
+                "subtitle": "اختر سورة للقراءة والنطق والاستماع.",
+                "meccan": "مكية",
+                "medinan": "مدنية",
+                "verses": "آيات",
+                "translation_label": "الترجمة:"
+            }
+        },
+        "search_placeholder": "ابحث عن سورة، ذكر، أو دعاء...",
+        "home_hero_title": "أذكار وأدعية يومية",
+        "home_hero_subtitle": "اطمئن بذكر الله مع أدعية صحيحة من القرآن والسنة.",
+        "category_titles": {
+            "morning_adhkar": "أذكار الصباح",
+            "evening_adhkar": "أذكار المساء",
+            "after_prayer": "أذكار بعد الصلاة",
+            "before_sleep": "أذكار النوم",
+            "protection": "أذكار التحصين",
+            "quran": "القرآن الكريم"
+        },
+        "action_buttons": {
+            "play": "تشغيل",
+            "copy": "نسخ",
+            "count": "عداد",
+            "view_full": "عرض السورة كاملة",
+            "read_more": "اقرأ المزيد"
+        },
+        "card_labels": {
+            "target": "العدد",
+            "completed": "مكتمل",
+            "transliteration": "النطق",
+            "translation": "الترجمة",
+            "source": "المصدر",
+            "virtue": "الفضل",
+            "tap_to_count": "اضغط للعد",
+            "done": "تم"
+        },
+        "home_cards": {
+            "adhkar_desc": "أذكار يومية تشمل أذكار الصباح والمساء.",
+            "duas_desc": "أدعية مصنفة لمختلف المناسبات والأوقات.",
+            "sources_desc": "المراجع والمصادر الموثوقة للمحتوى."
+        }
+    }
+}

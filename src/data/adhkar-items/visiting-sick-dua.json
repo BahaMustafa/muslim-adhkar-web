@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "147.mp3"
+            "audioFile": "147.mp3",
+            "title_ar": "دعاء 147"
         },
         {
             "id": "visiting-sick-dua-2",
@@ -37,7 +38,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "148.mp3"
+            "audioFile": "148.mp3",
+            "title_ar": "دعاء 148"
         }
-    ]
+    ],
+    "title_ar": "دعاء المريض",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء المريض"
 }

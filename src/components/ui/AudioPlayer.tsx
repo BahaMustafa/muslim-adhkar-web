@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Play, Pause, Volume2 } from 'lucide-react';
+import { useLanguage } from '@/lib/language-context';
 
 interface AudioPlayerProps {
     src: string;
@@ -9,6 +10,7 @@ interface AudioPlayerProps {
 }
 
 export const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, reciter }) => {
+    const { language } = useLanguage();
     const audioRef = useRef<HTMLAudioElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
@@ -61,7 +63,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, reciter }) => {
                 <button
                     onClick={togglePlay}
                     className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-emerald-600 text-white hover:bg-emerald-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
-                    aria-label={isPlaying ? "Pause" : "Play"}
+                    aria-label={isPlaying ? (language === 'ar' ? 'إيقاف' : 'Pause') : (language === 'ar' ? 'تشغيل' : 'Play')}
                 >
                     {isPlaying ? <Pause size={18} fill="currentColor" /> : <Play size={18} fill="currentColor" className="ml-1" />}
                 </button>
@@ -69,7 +71,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, reciter }) => {
                 <div className="flex-1 flex flex-col justify-center">
                     {reciter && (
                         <span className="text-xs text-emerald-700 dark:text-emerald-400 font-medium mb-1">
-                            Recitation by: {reciter}
+                            {language === 'ar' ? 'القارئ: ' : 'Recitation by: '} {reciter}
                         </span>
                     )}
                     <input

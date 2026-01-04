@@ -20,7 +20,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "150.mp3"
+            "audioFile": "150.mp3",
+            "title_ar": "دعاء 150"
         },
         {
             "id": "despair-hope-dua-2",
@@ -37,7 +38,8 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "151.mp3"
+            "audioFile": "151.mp3",
+            "title_ar": "دعاء 151"
         },
         {
             "id": "despair-hope-dua-3",
@@ -54,7 +56,10 @@
             "virtue": "",
             "lastVerified": "2026-01-02",
             "authenticity": "Sahih",
-            "audioFile": "152.mp3"
+            "audioFile": "152.mp3",
+            "title_ar": "دعاء 152"
         }
-    ]
+    ],
+    "title_ar": "دعاء اليأس والأمل",
+    "description_ar": "من الأذكار والأدعية الصحيحة: دعاء اليأس والأمل"
 }
