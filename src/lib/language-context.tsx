@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import translations from './translations.json';
 
 type Language = 'en' | 'ar';
@@ -19,6 +19,8 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export function LanguageProvider({ children, initialLang = 'en' }: { children: React.ReactNode, initialLang?: Language }) {
     const [language, setLanguageState] = useState<Language>(initialLang);
     const router = useRouter();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
 
     useEffect(() => {
         // Sync with localStorage on client mount if cookie was missing or we want to persist across sessions
@@ -41,7 +43,16 @@ export function LanguageProvider({ children, initialLang = 'en' }: { children: R
         localStorage.setItem('language', lang);
         document.cookie = `NEXT_LOCALE=${lang}; path=/; max-age=31536000; SameSite=Lax`;
 
-        // Refresh to update server components (layout title, html lang, etc)
+        // Update URL to ensure shareable links
+        const params = new URLSearchParams(searchParams.toString());
+        if (lang === 'ar') {
+            params.set('lang', 'ar');
+        } else {
+            params.delete('lang');
+        }
+
+        // Push new URL (this triggers a Server Component refresh with the new params)
+        router.push(`${pathname}?${params.toString()}`);
         router.refresh();
     };
 
