@@ -27,7 +27,7 @@ export default function PrayerHeaderBar({ nextPrayerName, nextPrayerTime, city, 
         // Only fetch if props are missing (Geolocation Fallback)
         if (!nextPrayerName || !city) {
             setLoading(true);
-            fetch('https://ipapi.co/json/')
+            fetch('/api/geolocation')
                 .then(res => res.json())
                 .then(data => {
                     const { latitude, longitude, city, timezone } = data;
