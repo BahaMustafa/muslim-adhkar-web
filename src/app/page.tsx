@@ -108,40 +108,53 @@ export default async function Home() {
           </div>
 
           {/* 3. Main Adhkar Entry */}
-          <Link href="/adhkar" className="md:col-span-4 relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-md p-8 flex flex-col justify-between hover:bg-white/10 transition-all group">
-            <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5 mix-blend-overlay" />
-            <div className="relative z-10">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 flex items-center justify-center mb-4 text-emerald-500">
-                <BookOpen className="w-6 h-6" />
+          <Link href="/adhkar" className="md:col-span-4 relative overflow-hidden rounded-[32px] bg-[#0c2e28] border border-emerald-800/30 p-8 flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 group">
+            {/* Islamic Star Pattern Background */}
+            <div className="absolute inset-0 opacity-[0.07] pointer-events-none"
+              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30L15 30z' fill='%2310b981' fill-rule='evenodd'/%3E%3C/svg%3E")` }}
+            />
+
+            <div className="relative z-10 flex items-start justify-between">
+              <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 backdrop-blur-md border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
+                <BookOpen className="w-7 h-7" />
               </div>
-              <h2 className="text-2xl font-bold mb-2 text-white">{t.nav.adhkar}</h2>
-              <p className="text-slate-400 text-sm">{t.home_cards.adhkar_desc}</p>
+              <div className="w-8 h-8 rounded-full border border-emerald-500/30 flex items-center justify-center text-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="rtl:rotate-180">→</span>
+              </div>
             </div>
-            <div className="relative z-10 mt-4 flex justify-end text-emerald-500">
-              <span className="group-hover:translate-x-1 transition-transform rtl:group-hover:-translate-x-1">→</span>
+
+            <div className="relative z-10 mt-8">
+              <h2 className="text-3xl font-bold text-emerald-50 mb-2 tracking-wide">{t.nav.adhkar}</h2>
+              <p className="text-emerald-200/60 text-sm leading-relaxed">{t.home_cards.adhkar_desc}</p>
             </div>
           </Link>
 
           {/* 4. Duas & Sources (Small) */}
-          <Link href="/duas" className="md:col-span-6 relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-md p-8 flex items-center gap-6 hover:bg-white/10 transition-all group">
-            <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5 mix-blend-overlay" />
-            <div className="relative z-10 p-4 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-600/20 text-blue-400">
-              <Sun className="w-6 h-6" />
-            </div>
+          <Link href="/duas" className="md:col-span-4 relative overflow-hidden rounded-[32px] bg-[#0f172a] border border-blue-800/30 p-8 flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 group">
+            <div className="absolute inset-0 opacity-[0.07] pointer-events-none"
+              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30L15 30z' fill='%233b82f6' fill-rule='evenodd'/%3E%3C/svg%3E")` }}
+            />
+
             <div className="relative z-10">
-              <h3 className="text-xl font-bold text-white">{t.nav.duas}</h3>
-              <p className="text-sm text-slate-400 line-clamp-1">{t.home_cards.duas_desc}</p>
+              <div className="w-14 h-14 rounded-2xl bg-blue-500/10 backdrop-blur-md border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:bg-blue-500/20 transition-colors mb-6">
+                <Sun className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-blue-50 mb-1">{t.nav.duas}</h3>
+              <p className="text-blue-200/60 text-sm line-clamp-2">{t.home_cards.duas_desc}</p>
             </div>
           </Link>
 
-          <Link href="/sources" className="md:col-span-6 relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-md p-8 flex items-center gap-6 hover:bg-white/10 transition-all group">
-            <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5 mix-blend-overlay" />
-            <div className="relative z-10 p-4 rounded-2xl bg-gradient-to-br from-amber-500/20 to-amber-600/20 text-amber-400">
-              <BookOpen className="w-6 h-6" />
-            </div>
+          <Link href="/sources" className="md:col-span-4 relative overflow-hidden rounded-[32px] bg-[#271c19] border border-amber-800/30 p-8 flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 group">
+            <div className="absolute inset-0 opacity-[0.07] pointer-events-none"
+              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30L15 30z' fill='%23f59e0b' fill-rule='evenodd'/%3E%3C/svg%3E")` }}
+            />
+
             <div className="relative z-10">
-              <h3 className="text-xl font-bold text-white">{t.nav.sources}</h3>
-              <p className="text-sm text-slate-400 line-clamp-1">{t.home_cards.sources_desc}</p>
+              <div className="w-14 h-14 rounded-2xl bg-amber-500/10 backdrop-blur-md border border-amber-500/20 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20 transition-colors mb-6">
+                <BookOpen className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-amber-50 mb-1">{t.nav.sources}</h3>
+              <p className="text-amber-200/60 text-sm line-clamp-2">{t.home_cards.sources_desc}</p>
             </div>
           </Link>
 
