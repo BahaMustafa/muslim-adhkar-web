@@ -6,6 +6,8 @@ import { getAdhkarBySlug, getAllAdhkarSlugs } from '@/lib/adhkar-service';
 import { cookies } from 'next/headers';
 import translations from '@/lib/translations.json';
 
+import { constructMetadata } from '@/components/SEO';
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
     const { slug } = await params;
     const pageData = await getAdhkarBySlug(slug);
@@ -13,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
 
     if (!pageData) {
-        return { title: 'Adhkar Not Found' };
+        return constructMetadata({ title: 'Adhkar Not Found', lang });
     }
 
     const transKey = slug.replaceAll('-', '_');
@@ -22,19 +24,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const displayTitle = lang === 'ar' ? (pageData.title_ar || titleAr || pageData.title) : pageData.title;
     const description = lang === 'ar' ? (pageData.description_ar || pageData.description) : pageData.description;
 
-    return {
-        title: `${displayTitle} - ${lang === 'ar' ? 'أذكار مسلم' : 'Authentic Daily Remembrances'}`,
+    return constructMetadata({
+        title: displayTitle,
         description: description,
-        openGraph: {
-            title: displayTitle,
-            description: description,
-            type: 'article',
-            modifiedTime: pageData.lastVerified
-        },
-        other: {
-            'last-modified': pageData.lastVerified
-        }
-    };
+        path: `/adhkar/${slug}`,
+        lang: lang
+    });
 }
 
 export default async function AdhkarPage({ params }: { params: Promise<{ slug: string }> }) {

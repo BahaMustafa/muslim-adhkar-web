@@ -9,6 +9,8 @@ import { allAdhkar, categoryMap } from '@/lib/data';
 import { cookies } from 'next/headers';
 import translations from '@/lib/translations.json';
 
+import { constructMetadata } from '@/components/SEO';
+
 export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
     const { category } = await params;
     const cookieStore = await cookies();
@@ -29,12 +31,16 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
     const title = lang === 'ar' ? rawTitleAr : rawTitleEn;
     const capitalizedTitle = title.charAt(0).toUpperCase() + title.slice(1);
 
-    return {
-        title: `${capitalizedTitle} - ${t.branding.name}`,
-        description: lang === 'ar'
-            ? pageData?.description_ar || `${t.pages.duas.intro}`
-            : `Authentic supplications for ${capitalizedTitle}.`,
-    };
+    const description = lang === 'ar'
+        ? pageData?.description_ar || `${t.pages.duas.intro}`
+        : `Authentic supplications for ${capitalizedTitle}.`;
+
+    return constructMetadata({
+        title: capitalizedTitle,
+        description: description,
+        path: `/duas/${category}`,
+        lang: lang
+    });
 }
 
 export default async function DuaCategoryPage({ params }: { params: Promise<{ category: string }> }) {

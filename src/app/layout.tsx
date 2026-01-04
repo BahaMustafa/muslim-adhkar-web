@@ -26,30 +26,19 @@ const amiri = Amiri({
   display: "swap",
 });
 
+import { constructMetadata } from "@/components/SEO";
+
 export async function generateMetadata(): Promise<Metadata> {
   const cookieStore = await cookies();
   const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
   const t = translations[lang];
 
-  return {
-    title: lang === 'ar' ? "أذكار وسلم - أذكار وأدعية يومية" : "Muslim Adhkar - Daily Adhkar & Duas",
+  return constructMetadata({
+    title: lang === 'ar' ? "أذكار وأدعية يومية" : "Daily Adhkar & Duas", // Builder appends site name
     description: lang === 'ar' ? t.home_hero_subtitle : "Comprehensive collection of authentic Adhkar, Duas, and Hadith sources.",
-    metadataBase: new URL("https://muslimadhkar.com"),
-    alternates: {
-      canonical: "/",
-    },
-    openGraph: {
-      title: lang === 'ar' ? "أذكار مسلم" : "Muslim Adhkar",
-      description: lang === 'ar' ? t.home_hero_subtitle : "Daily Adhkar and Duas from authentic sources.",
-      type: "website",
-    },
-    manifest: '/manifest.json',
-    icons: {
-      icon: '/favicon.ico',
-      shortcut: '/favicon.ico',
-      apple: '/apple-touch-icon.png',
-    },
-  };
+    path: "/",
+    lang: lang
+  });
 }
 
 export default async function RootLayout({

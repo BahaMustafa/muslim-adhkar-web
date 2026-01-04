@@ -22,30 +22,35 @@ interface PageProps {
     searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
+import { constructMetadata } from '@/components/SEO';
+
 export async function generateMetadata({ params, searchParams }: PageProps) {
     const resolvedParams = await params;
     const resolvedSearchParams = await searchParams;
     const { surahSlug } = resolvedParams;
 
     const id = getSurahIdFromSlug(surahSlug);
-    if (!id) return {};
+    if (!id) return constructMetadata({ title: 'Surah Not Found' });
 
     const cookieStore = await cookies();
     const cookieLang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
     const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : cookieLang) as "en" | "ar";
-    const t = translations[lang] || translations.en; // Use 'en' as default if not found
+    const t = translations[lang] || translations.en;
 
     const detail = await getChapterDetail(id, lang);
-    if (!detail) return {};
+    if (!detail) return constructMetadata({ title: 'Surah Not Found', lang });
 
     const title = lang === 'ar' ? detail.name : detail.transliteration;
+    const description = lang === 'ar'
+        ? `${t.pages.quran.subtitle} ${detail.name}`
+        : `Read and listen to Surah ${detail.transliteration} (${detail.name}) with multilingual translation, transliteration and audio.`;
 
-    return {
-        title: `${title} - ${t.pages.quran.title} - ${t.branding.name}`,
-        description: lang === 'ar'
-            ? `${t.pages.quran.subtitle} ${detail.name}`
-            : `Read and listen to Surah ${detail.transliteration} (${detail.name}) with multilingual translation, transliteration and audio.`,
-    };
+    return constructMetadata({
+        title: `${title} - ${t.pages.quran.title}`,
+        description: description,
+        path: `/sources/quran/${surahSlug}`,
+        lang: lang
+    });
 }
 
 export default async function SurahPage({ params, searchParams }: PageProps) {
