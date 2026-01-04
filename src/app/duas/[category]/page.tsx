@@ -11,10 +11,14 @@ import translations from '@/lib/translations.json';
 
 import { constructMetadata } from '@/components/SEO';
 
-export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: { params: Promise<{ category: string }>, searchParams: Promise<{ [key: string]: string | string[] | undefined }> }): Promise<Metadata> {
     const { category } = await params;
+    const resolvedSearchParams = await searchParams;
     const cookieStore = await cookies();
-    const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
+    const cookieLang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
+    const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : cookieLang) as "en" | "ar";
+
+    // Safety check just in case, though typing handles 'en'|'ar'
     const t = translations[lang] || translations.en;
 
     // Fetch data to get localized titles

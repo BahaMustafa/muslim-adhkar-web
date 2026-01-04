@@ -8,11 +8,13 @@ import translations from '@/lib/translations.json';
 
 import { constructMetadata } from '@/components/SEO';
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: { params: Promise<{ slug: string }>, searchParams: Promise<{ [key: string]: string | string[] | undefined }> }): Promise<Metadata> {
     const { slug } = await params;
+    const resolvedSearchParams = await searchParams;
     const pageData = await getAdhkarBySlug(slug);
     const cookieStore = await cookies();
-    const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
+    const cookieLang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
+    const lang = (typeof resolvedSearchParams.lang === 'string' ? resolvedSearchParams.lang : cookieLang) as "en" | "ar";
 
     if (!pageData) {
         return constructMetadata({ title: 'Adhkar Not Found', lang });
