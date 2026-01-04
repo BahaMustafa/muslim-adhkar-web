@@ -8,6 +8,7 @@ import CommandPalette from "@/components/search/CommandPalette";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import Analytics from "@/components/Analytics";
+import { BottomNav } from "@/components/layout/BottomNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -59,10 +60,11 @@ export default async function RootLayout({
           <Analytics />
           <CommandPalette />
           <Header />
-          <div className="flex-1">
+          <div className="flex-1 pb-16 md:pb-0">
             {children}
           </div>
           <Footer />
+          <BottomNav />
         </LanguageProvider>
       </body>
     </html>

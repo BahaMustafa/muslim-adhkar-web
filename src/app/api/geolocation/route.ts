@@ -2,43 +2,59 @@ import { NextResponse } from 'next/server';
 
 export async function GET(request: Request) {
     try {
-        // Try to get IP from headers (works if behind a proxy/Vercel)
-        // For localhost, we might just call ipapi directly without IP param to let it detect,
-        // but server-side fetch from localhost might look like data center?
-        // Actually, if I fetch 'https://ipapi.co/json/' from server, it returns the server's location.
-        // On localhost, it returns my ISP location (same as browser).
-        // On Vercel, it returns Vercel's AWS location (not the user).
-
-        // BETTER APPROACH for Production:
-        // Use headers 'x-forwarded-for' to get user IP, then query ipapi with that IP.
-
         const forwardedFor = request.headers.get('x-forwarded-for');
         let clientIp = forwardedFor ? forwardedFor.split(',')[0] : null;
+        const isLocal = !clientIp || clientIp.includes('127.0.0.1') || clientIp.includes('::1');
 
-        // If testing on localhost, clientIp might be ::1 or 127.0.0.1.
-        // In that case, we can't query specific IP, just let ipapi detect the caller (me).
-        // But for real users, we need their IP.
-
-        let url = 'https://ipapi.co/json/';
-        if (clientIp && !clientIp.includes('127.0.0.1') && !clientIp.includes('::1')) {
-            url = `https://ipapi.co/${clientIp}/json/`;
-        }
-
-        const res = await fetch(url, {
-            headers: {
-                'User-Agent': 'MuslimAdhkarWeb/1.0'
+        // 1. Try ipapi.co (Preferred HTTPS)
+        try {
+            let url = 'https://ipapi.co/json/';
+            if (!isLocal && clientIp) {
+                url = `https://ipapi.co/${clientIp}/json/`;
             }
-        });
-
-        if (!res.ok) {
-            throw new Error(`Failed to fetch geo data: ${res.status}`);
+            console.log('Fetching primary geo:', url);
+            const res = await fetch(url, {
+                headers: { 'User-Agent': 'Mozilla/5.0' }
+            });
+            if (res.ok) {
+                const data = await res.json();
+                if (data.latitude && data.longitude) {
+                    return NextResponse.json(data);
+                }
+            }
+        } catch (e) {
+            console.error('Primary geo failed:', e);
         }
 
-        const data = await res.json();
-        return NextResponse.json(data);
+        // 2. Fallback to ip-api.com (HTTP, reliable for free tier)
+        try {
+            // ip-api.com doesn't support HTTPS on free tier, but server-side fetch is fine.
+            let url = 'http://ip-api.com/json/';
+            if (!isLocal && clientIp) {
+                url = `http://ip-api.com/json/${clientIp}`;
+            }
+            console.log('Fetching fallback geo:', url);
+            const res = await fetch(url);
+            if (res.ok) {
+                const data = await res.json();
+                if (data.status === 'success') {
+                    // Map fields to match ipapi.co format
+                    return NextResponse.json({
+                        city: data.city,
+                        latitude: data.lat,
+                        longitude: data.lon,
+                        timezone: data.timezone,
+                        country: data.country
+                    });
+                }
+            }
+        } catch (e) {
+            console.error('Fallback geo failed:', e);
+        }
+
+        return NextResponse.json({ error: 'Failed to detect location' }, { status: 500 });
     } catch (error) {
         console.error('Geolocation error:', error);
-        // Fallback or error
-        return NextResponse.json({ error: 'Failed to detect location' }, { status: 500 });
+        return NextResponse.json({ error: 'Internal error' }, { status: 500 });
     }
 }
