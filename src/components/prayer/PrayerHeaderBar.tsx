@@ -15,9 +15,10 @@ interface PrayerHeaderBarProps {
     nextPrayerTime?: string; // Formatted time
     city?: string;
     label?: string;
+    onDataLoaded?: (data: { city: string, prayers: PrayerTimes, next: { name: string, time: Date } }) => void;
 }
 
-export default function PrayerHeaderBar({ nextPrayerName, nextPrayerTime, city, label }: PrayerHeaderBarProps) {
+export default function PrayerHeaderBar({ nextPrayerName, nextPrayerTime, city, label, onDataLoaded }: PrayerHeaderBarProps) {
     const { t, language } = useLanguage();
     const [localData, setLocalData] = useState<{ name: string, time: string, city: string } | null>(null);
     const [loading, setLoading] = useState(false);
@@ -44,12 +45,17 @@ export default function PrayerHeaderBar({ nextPrayerName, nextPrayerTime, city, 
                             time: timeStr,
                             city: city
                         });
+
+                        // Callback for parent components
+                        if (onDataLoaded) {
+                            onDataLoaded({ city, prayers, next });
+                        }
                     }
                 })
                 .catch(err => console.error('Geo fetch failed', err))
                 .finally(() => setLoading(false));
         }
-    }, [nextPrayerName, city, language]);
+    }, [nextPrayerName, city, language, onDataLoaded]);
 
     const displayCity = city || localData?.city;
     const displayTime = nextPrayerTime || localData?.time;
