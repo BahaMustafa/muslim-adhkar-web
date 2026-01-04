@@ -90,37 +90,40 @@ export default async function Home() {
           </div>
 
           {/* 3. Main Adhkar Entry */}
-          <Link href="/adhkar" className="md:col-span-4 relative overflow-hidden rounded-[32px] bg-white dark:bg-neutral-900 border border-border/50 p-8 flex flex-col justify-between hover:shadow-lg transition-all group">
-            <div>
-              <div className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4 text-slate-600">
-                <BookOpen className="w-5 h-5" />
+          <Link href="/adhkar" className="md:col-span-4 relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-md p-8 flex flex-col justify-between hover:bg-white/10 transition-all group">
+            <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5 mix-blend-overlay" />
+            <div className="relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 flex items-center justify-center mb-4 text-emerald-500">
+                <BookOpen className="w-6 h-6" />
               </div>
-              <h2 className="text-2xl font-bold mb-2">{t.nav.adhkar}</h2>
-              <p className="text-muted-foreground text-sm">{t.home_cards.adhkar_desc}</p>
+              <h2 className="text-2xl font-bold mb-2 text-white">{t.nav.adhkar}</h2>
+              <p className="text-slate-400 text-sm">{t.home_cards.adhkar_desc}</p>
             </div>
-            <div className="mt-4 flex justify-end text-emerald-600">
+            <div className="relative z-10 mt-4 flex justify-end text-emerald-500">
               <span className="group-hover:translate-x-1 transition-transform rtl:group-hover:-translate-x-1">→</span>
             </div>
           </Link>
 
           {/* 4. Duas & Sources (Small) */}
-          <Link href="/duas" className="md:col-span-6 relative overflow-hidden rounded-[32px] bg-white dark:bg-neutral-900 border border-border/50 p-8 flex items-center gap-6 hover:bg-slate-50 dark:hover:bg-neutral-800/50 transition-all">
-            <div className="p-4 rounded-full bg-blue-50 text-blue-600 dark:bg-blue-900/20">
+          <Link href="/duas" className="md:col-span-6 relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-md p-8 flex items-center gap-6 hover:bg-white/10 transition-all group">
+            <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5 mix-blend-overlay" />
+            <div className="relative z-10 p-4 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-600/20 text-blue-400">
               <Sun className="w-6 h-6" />
             </div>
-            <div>
-              <h3 className="text-xl font-bold">{t.nav.duas}</h3>
-              <p className="text-sm text-muted-foreground line-clamp-1">{t.home_cards.duas_desc}</p>
+            <div className="relative z-10">
+              <h3 className="text-xl font-bold text-white">{t.nav.duas}</h3>
+              <p className="text-sm text-slate-400 line-clamp-1">{t.home_cards.duas_desc}</p>
             </div>
           </Link>
 
-          <Link href="/sources" className="md:col-span-6 relative overflow-hidden rounded-[32px] bg-white dark:bg-neutral-900 border border-border/50 p-8 flex items-center gap-6 hover:bg-slate-50 dark:hover:bg-neutral-800/50 transition-all">
-            <div className="p-4 rounded-full bg-amber-50 text-amber-600 dark:bg-amber-900/20">
+          <Link href="/sources" className="md:col-span-6 relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-md p-8 flex items-center gap-6 hover:bg-white/10 transition-all group">
+            <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5 mix-blend-overlay" />
+            <div className="relative z-10 p-4 rounded-2xl bg-gradient-to-br from-amber-500/20 to-amber-600/20 text-amber-400">
               <BookOpen className="w-6 h-6" />
             </div>
-            <div>
-              <h3 className="text-xl font-bold">{t.nav.sources}</h3>
-              <p className="text-sm text-muted-foreground line-clamp-1">{t.home_cards.sources_desc}</p>
+            <div className="relative z-10">
+              <h3 className="text-xl font-bold text-white">{t.nav.sources}</h3>
+              <p className="text-sm text-slate-400 line-clamp-1">{t.home_cards.sources_desc}</p>
             </div>
           </Link>
 
