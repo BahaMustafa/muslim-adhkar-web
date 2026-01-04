@@ -68,24 +68,42 @@ export default async function Home() {
           </Link>
 
           {/* 2. Quran Quick Access */}
-          <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
             {/* Al-Kahf */}
-            <Link href="/sources/quran/surah-al-kahf" className="relative group overflow-hidden rounded-[24px] bg-emerald-50 dark:bg-emerald-900/10 border border-emerald-100 dark:border-emerald-900/20 p-6 flex flex-col justify-center hover:bg-emerald-100 dark:hover:bg-emerald-900/20 transition-all">
-              <h3 className="font-bold text-lg text-emerald-800 dark:text-emerald-400 mb-1">{isAr ? 'سورة الكهف' : 'Surah Al-Kahf'}</h3>
-              <p className="text-xs text-emerald-600/80">{isAr ? 'نور ما بين الجمعتين' : 'Friday Sunnah'}</p>
-              <BookOpen className="absolute bottom-4 right-4 w-12 h-12 text-emerald-200 dark:text-emerald-800 opacity-20 group-hover:scale-110 transition-transform" />
+            <Link href="/sources/quran/surah-al-kahf" className="relative group overflow-hidden rounded-[32px] bg-gradient-to-br from-[#8FB9A8] to-[#C3DED6] p-8 flex flex-col justify-between h-56 hover:shadow-lg transition-all hover:scale-[1.02]">
+              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white">
+                <BookOpen className="w-5 h-5" />
+              </div>
+              <div className="relative z-10">
+                <h3 className="font-bold text-2xl text-white leading-tight mb-1">{isAr ? 'سورة الكهف' : 'Surah Al-Kahf'}</h3>
+                <p className="text-white/80 text-sm font-medium">{isAr ? 'نور ما بين الجمعتين' : 'Friday Sunnah'}</p>
+              </div>
+              {/* Islamic Pattern Overlay */}
+              <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10 mix-blend-overlay" />
             </Link>
+
             {/* Al-Mulk */}
-            <Link href="/sources/quran/surah-al-mulk" className="relative group overflow-hidden rounded-[24px] bg-blue-50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-900/20 p-6 flex flex-col justify-center hover:bg-blue-100 dark:hover:bg-blue-900/20 transition-all">
-              <h3 className="font-bold text-lg text-blue-800 dark:text-blue-400 mb-1">{isAr ? 'سورة الملك' : 'Surah Al-Mulk'}</h3>
-              <p className="text-xs text-blue-600/80">{isAr ? 'المنجية من عذاب القبر' : 'Protection from Grave'}</p>
-              <Moon className="absolute bottom-4 right-4 w-12 h-12 text-blue-200 dark:text-blue-800 opacity-20 group-hover:scale-110 transition-transform" />
+            <Link href="/sources/quran/surah-al-mulk" className="relative group overflow-hidden rounded-[32px] bg-gradient-to-br from-[#A8AED1] to-[#D5D8E8] p-8 flex flex-col justify-between h-56 hover:shadow-lg transition-all hover:scale-[1.02]">
+              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white">
+                <Moon className="w-5 h-5" />
+              </div>
+              <div className="relative z-10">
+                <h3 className="font-bold text-2xl text-white leading-tight mb-1">{isAr ? 'سورة الملك' : 'Surah Al-Mulk'}</h3>
+                <p className="text-white/80 text-sm font-medium">{isAr ? 'المنجية من عذاب القبر' : 'Protection from Grave'}</p>
+              </div>
+              <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10 mix-blend-overlay" />
             </Link>
+
             {/* Last 10 */}
-            <Link href="/sources/quran" className="relative group overflow-hidden rounded-[24px] bg-amber-50 dark:bg-amber-900/10 border border-amber-100 dark:border-amber-900/20 p-6 flex flex-col justify-center hover:bg-amber-100 dark:hover:bg-amber-900/20 transition-all">
-              <h3 className="font-bold text-lg text-amber-800 dark:text-amber-400 mb-1">{isAr ? 'قصار السور' : 'Last 10 Surahs'}</h3>
-              <p className="text-xs text-amber-600/80">{isAr ? 'للحفظ والمراجعة' : 'Easy to Memorize'}</p>
-              <Sun className="absolute bottom-4 right-4 w-12 h-12 text-amber-200 dark:text-amber-800 opacity-20 group-hover:scale-110 transition-transform" />
+            <Link href="/sources/quran" className="relative group overflow-hidden rounded-[32px] bg-gradient-to-br from-[#DBC0B8] to-[#EEE0DC] p-8 flex flex-col justify-between h-56 hover:shadow-lg transition-all hover:scale-[1.02]">
+              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white">
+                <Sun className="w-5 h-5" />
+              </div>
+              <div className="relative z-10">
+                <h3 className="font-bold text-2xl text-white leading-tight mb-1">{isAr ? 'قصار السور' : 'Last 10 Surahs'}</h3>
+                <p className="text-white/80 text-sm font-medium">{isAr ? 'للحفظ والمراجعة' : 'Easy to Memorize'}</p>
+              </div>
+              <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10 mix-blend-overlay" />
             </Link>
           </div>
 
