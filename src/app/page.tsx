@@ -64,15 +64,6 @@ export default async function Home() {
           {/* 1. Prayer Times Ribbon (Top Priority) */}
           <Link href="/prayer-times" className="group md:col-span-12 relative overflow-hidden rounded-[32px] border border-border/50 bg-gradient-to-r from-slate-900 to-slate-800 text-white p-8 flex flex-col md:flex-row items-center justify-between shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
             <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5 mix-blend-overlay" />
-            <div className="relative z-10 flex items-center gap-6 text-center md:text-left">
-              <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-md">
-                <Clock className="w-8 h-8 text-emerald-400" />
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold mb-1">{isAr ? 'مواقيت الصلاة' : 'Prayer Times'}</h2>
-                <p className="text-slate-300 text-sm">{isAr ? 'تابع أوقات الصلاة بدقة في مدينتك' : 'Track accurate prayer times for your city'}</p>
-              </div>
-            </div>
             <HomePrayerRibbon />
           </Link>
 
