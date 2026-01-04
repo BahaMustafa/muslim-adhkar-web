@@ -15,40 +15,39 @@ export function HomePrayerRibbon() {
     const [loading, setLoading] = useState(true);
     const [city, setCity] = useState<string>("");
     const [nextPrayer, setNextPrayer] = useState<{ name: string, time: string } | null>(null);
+    const [geoData, setGeoData] = useState<{ latitude: number, longitude: number, city: string, timezone: string } | null>(null);
 
+    // 1. Fetch Geolocation (Cache-first)
     useEffect(() => {
+        const CACHE_KEY = 'prayer_geo_cache';
+        const tryLoadCache = () => {
+            const cached = localStorage.getItem(CACHE_KEY);
+            if (cached) {
+                try {
+                    const data = JSON.parse(cached);
+                    // Cache validity: 24 hours
+                    if (Date.now() - data.timestamp < 86400000) {
+                        setGeoData(data);
+                        setLoading(false);
+                        return true;
+                    }
+                } catch (e) {
+                    localStorage.removeItem(CACHE_KEY);
+                }
+            }
+            return false;
+        };
+
+        if (tryLoadCache()) return;
+
         setLoading(true);
         fetch('/api/geolocation')
             .then(res => res.json())
             .then(data => {
-                const { latitude, longitude, city, timezone } = data;
-                if (latitude && longitude) {
-                    const coords = new Coordinates(latitude, longitude);
-                    const params = CalculationMethod.MuslimWorldLeague();
-                    const date = new Date();
-                    const prayers = new PrayerTimes(coords, date, params);
-                    const next = getNextPrayer(prayers);
-
-                    const prayerList = [
-                        { key: 'Fajr', val: prayers.fajr },
-                        { key: 'Dhuhr', val: prayers.dhuhr },
-                        { key: 'Asr', val: prayers.asr },
-                        { key: 'Maghrib', val: prayers.maghrib },
-                        { key: 'Isha', val: prayers.isha },
-                    ];
-
-                    const formatted = prayerList.map(p => ({
-                        name: p.key,
-                        time: formatTime(p.val, language, timezone || Intl.DateTimeFormat().resolvedOptions().timeZone),
-                        isNext: next.name === p.key
-                    }));
-
-                    setTimes(formatted);
-                    setCity(city || (isAr ? "مدينتك" : "Your City"));
-                    setNextPrayer({
-                        name: next.name,
-                        time: formatTime(next.time, language, timezone || Intl.DateTimeFormat().resolvedOptions().timeZone)
-                    });
+                if (data.latitude && data.longitude) {
+                    const cacheData = { ...data, timestamp: Date.now() };
+                    localStorage.setItem(CACHE_KEY, JSON.stringify(cacheData));
+                    setGeoData(data);
                 }
             })
             .catch(err => {
@@ -56,7 +55,41 @@ export function HomePrayerRibbon() {
                 setCity(isAr ? "غير محدد" : "Unknown");
             })
             .finally(() => setLoading(false));
-    }, [language, isAr]);
+    }, []); // Run once on mount
+
+    // 2. Calculate Prayer Times (Reactive to GeoData or Language)
+    useEffect(() => {
+        if (!geoData) return;
+
+        const { latitude, longitude, city: geoCity, timezone } = geoData;
+        const coords = new Coordinates(latitude, longitude);
+        const params = CalculationMethod.MuslimWorldLeague();
+        const date = new Date();
+        const prayers = new PrayerTimes(coords, date, params);
+        const next = getNextPrayer(prayers);
+
+        const prayerList = [
+            { key: 'Fajr', val: prayers.fajr },
+            { key: 'Dhuhr', val: prayers.dhuhr },
+            { key: 'Asr', val: prayers.asr },
+            { key: 'Maghrib', val: prayers.maghrib },
+            { key: 'Isha', val: prayers.isha },
+        ];
+
+        const formatted = prayerList.map(p => ({
+            name: p.key,
+            time: formatTime(p.val, language, timezone || Intl.DateTimeFormat().resolvedOptions().timeZone),
+            isNext: next.name === p.key
+        }));
+
+        setTimes(formatted);
+        setCity(geoCity || (isAr ? "مدينتك" : "Your City"));
+        setNextPrayer({
+            name: next.name,
+            time: formatTime(next.time, language, timezone || Intl.DateTimeFormat().resolvedOptions().timeZone)
+        });
+
+    }, [geoData, language, isAr]);
 
     const labelsAr: Record<string, string> = {
         'Fajr': 'الفجر', 'Dhuhr': 'الظهر', 'Asr': 'العصر', 'Maghrib': 'المغرب', 'Isha': 'العشاء'
@@ -95,8 +128,8 @@ export function HomePrayerRibbon() {
                         <div
                             key={p.name}
                             className={`px-3 py-1 rounded-full text-xs font-medium border transition-all duration-500 ${p.isNext
-                                    ? 'bg-emerald-500 text-white border-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.4)] scale-105'
-                                    : 'bg-white/5 text-slate-300 border-white/10'
+                                ? 'bg-emerald-500 text-white border-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.4)] scale-105'
+                                : 'bg-white/5 text-slate-300 border-white/10'
                                 }`}
                         >
                             <span className="opacity-70 mr-1">{isAr ? labelsAr[p.name] : p.name}</span>
