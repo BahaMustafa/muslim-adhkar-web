@@ -46,7 +46,7 @@ export default async function Home() {
           </h1>
 
           {/* Smart Adhkar Button */}
-          <Link href={recommended.href} className="group relative inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 text-white rounded-full text-lg font-semibold shadow-lg hover:bg-emerald-700 hover:scale-105 transition-all duration-300">
+          <Link href={recommended.href} className="group relative inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 text-white rounded-full text-lg font-semibold shadow-lg shadow-glow hover:bg-emerald-700 hover:scale-105 transition-all duration-300">
             <Sparkles className="w-5 h-5 animate-pulse" />
             <span>{isAr ? recommended.label_ar : recommended.label}</span>
             <div className="absolute inset-0 rounded-full ring-2 ring-white/20 group-hover:ring-white/40 transition-all" />
