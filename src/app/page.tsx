@@ -109,9 +109,9 @@ export default async function Home() {
 
           {/* 3. Main Adhkar Entry */}
           <Link href="/adhkar" className="md:col-span-4 relative overflow-hidden rounded-[32px] bg-[#0c2e28] border border-emerald-800/30 p-8 flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 group">
-            {/* Islamic Star Pattern Background */}
-            <div className="absolute inset-0 opacity-[0.07] pointer-events-none"
-              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30L15 30z' fill='%2310b981' fill-rule='evenodd'/%3E%3C/svg%3E")` }}
+            {/* Authentic Islamic Geometric Pattern (8-Point Star Interlock) */}
+            <div className="absolute inset-0 opacity-[0.15] pointer-events-none"
+              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%2310b981' stroke-width='1.5'%3E%3Cpath d='M0 40L20 20 40 40V20L20 0 0 20z' opacity='.5'/%3E%3Cpath d='M20 40L40 20 20 0 0 20z' opacity='.5'/%3E%3Ccircle cx='20' cy='20' r='6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }}
             />
 
             <div className="relative z-10 flex items-start justify-between">
@@ -131,8 +131,9 @@ export default async function Home() {
 
           {/* 4. Duas & Sources (Small) */}
           <Link href="/duas" className="md:col-span-4 relative overflow-hidden rounded-[32px] bg-[#0f172a] border border-blue-800/30 p-8 flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 group">
-            <div className="absolute inset-0 opacity-[0.07] pointer-events-none"
-              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30L15 30z' fill='%233b82f6' fill-rule='evenodd'/%3E%3C/svg%3E")` }}
+            {/* Islamic Floral/Geo Pattern */}
+            <div className="absolute inset-0 opacity-[0.12] pointer-events-none"
+              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%233b82f6' stroke-width='1'%3E%3Cpath d='M25 0l25 25-25 25L0 25z'/%3E%3Cpath d='M25 10l15 15-15 15-15-15z'/%3E%3Cpath d='M25 0v50M0 25h50' stroke-opacity='.3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }}
             />
 
             <div className="relative z-10">
@@ -145,8 +146,9 @@ export default async function Home() {
           </Link>
 
           <Link href="/sources" className="md:col-span-4 relative overflow-hidden rounded-[32px] bg-[#271c19] border border-amber-800/30 p-8 flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 group">
-            <div className="absolute inset-0 opacity-[0.07] pointer-events-none"
-              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30L15 30z' fill='%23f59e0b' fill-rule='evenodd'/%3E%3C/svg%3E")` }}
+            {/* Hexagonal Islamic Pattern */}
+            <div className="absolute inset-0 opacity-[0.15] pointer-events-none"
+              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='52' viewBox='0 0 30 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23f59e0b' stroke-width='1'%3E%3Cpath d='M15 1L29 9v16L15 33 1 25V9z'/%3E%3Cpath d='M15 51L1 43V27l14-8 14 8v16z'/%3E%3C/g%3E%3C/svg%3E")` }}
             />
 
             <div className="relative z-10">
