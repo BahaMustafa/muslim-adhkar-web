@@ -4,19 +4,39 @@ import { collectionsData } from '@/lib/data';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Metadata } from 'next';
 import { getAllAdhkarSlugs, getAdhkarBySlug } from '@/lib/adhkar-service';
+import { constructMetadata } from '@/components/SEO';
 
 export async function generateMetadata({ params }: { params: Promise<{ collection: string }> }): Promise<Metadata> {
     const { collection } = await params;
     const collectionInfo = collectionsData[collection];
 
     if (!collectionInfo) {
-        return { title: 'Source Not Found' };
+        return constructMetadata({
+            title: 'Source Not Found',
+            description: 'The requested source page does not exist.',
+            path: '/sources',
+        });
     }
 
-    return {
-        title: `${collectionInfo.title} - Authentic Adhkar Source`,
+    if (collection !== 'hisnul-muslim') {
+        return {
+            ...constructMetadata({
+                title: `${collectionInfo.title} (Coming Soon)`,
+                description: `This source section is not ready yet.`,
+                path: `/sources/${collection}`,
+            }),
+            robots: {
+                index: false,
+                follow: false,
+            },
+        };
+    }
+
+    return constructMetadata({
+        title: `${collectionInfo.title} Source`,
         description: `Browse all Adhkar and Duas sourced from ${collectionInfo.title}. ${collectionInfo.description}`,
-    };
+        path: `/sources/${collection}`,
+    });
 }
 
 

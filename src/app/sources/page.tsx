@@ -2,15 +2,18 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import translations from '@/lib/translations.json';
+import { constructMetadata } from '@/components/SEO';
 
 export async function generateMetadata(): Promise<Metadata> {
     const cookieStore = await cookies();
     const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
     const t = translations[lang] || translations.en;
-    return {
-        title: `${t.pages.sources.title} - ${t.branding.name}`,
+    return constructMetadata({
+        title: t.pages.sources.title,
         description: t.pages.sources.intro,
-    };
+        path: '/sources',
+        lang,
+    });
 }
 
 // ... imports

@@ -5,8 +5,8 @@ const siteConfig = {
     nameAr: 'مسلم أذكار',
     description: 'Comprehensive collection of authentic Adhkar, Duas, and Islamic sources.',
     descriptionAr: 'مجموعة شاملة من الأذكار والأدعية الصحيحة من الكتاب والسنة.',
-    url: 'https://muslimadhkar.com',
-    ogImage: 'https://muslimadhkar.com/og-image.jpg',
+    url: 'https://www.muslimadhkar.com',
+    ogImage: 'https://www.muslimadhkar.com/logo.png',
     twitterHandle: '@muslimadhkar'
 };
 
@@ -22,7 +22,7 @@ export function constructMetadata({
     title,
     description,
     image,
-    path = '',
+    path = '/',
     lang = 'en'
 }: SEOProps = {}): Metadata {
 
@@ -40,10 +40,7 @@ export function constructMetadata({
     const finalImage = image ? [image] : [siteConfig.ogImage];
 
     return {
-        title: title ? {
-            default: fullTitle,
-            template: `%s | ${siteName}` // Fallback template if needed
-        } : fullTitle,
+        title: fullTitle,
         description: finalDescription,
         metadataBase: new URL(siteConfig.url),
         alternates: {

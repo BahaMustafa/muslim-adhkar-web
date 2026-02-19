@@ -1,15 +1,18 @@
 import { Metadata } from "next";
 import { cookies } from "next/headers";
 import translations from "@/lib/translations.json";
+import { constructMetadata } from "@/components/SEO";
 
 export async function generateMetadata(): Promise<Metadata> {
     const cookieStore = await cookies();
     const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
     const t = translations[lang] || translations.en;
-    return {
-        title: `${t.pages.privacy.title} - ${t.branding.name}`,
+    return constructMetadata({
+        title: t.pages.privacy.title,
         description: t.pages.privacy.intro.substring(0, 150) + "...",
-    };
+        path: '/privacy',
+        lang,
+    });
 }
 
 export default async function PrivacyPage() {

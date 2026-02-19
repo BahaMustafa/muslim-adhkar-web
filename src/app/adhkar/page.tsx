@@ -1,12 +1,21 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { cookies } from 'next/headers';
-import translations from '@/lib/translations.json';
+import { constructMetadata } from '@/components/SEO';
 
-export const metadata: Metadata = {
-    title: 'Daily Muslim Adhkar Cycle',
-    description: 'Structure your day with authentic morning, evening, and post-prayer remembrances.',
-};
+export async function generateMetadata(): Promise<Metadata> {
+    const cookieStore = await cookies();
+    const lang = (cookieStore.get('NEXT_LOCALE')?.value || 'en') as 'en' | 'ar';
+
+    return constructMetadata({
+        title: lang === 'ar' ? 'ورد يومي من الأذكار' : 'Daily Muslim Adhkar Cycle',
+        description: lang === 'ar'
+            ? 'نظّم يومك بأذكار الصباح والمساء وأذكار ما بعد الصلاة.'
+            : 'Structure your day with authentic morning, evening, and post-prayer remembrances.',
+        path: '/adhkar',
+        lang,
+    });
+}
 
 export default async function DailyAdhkarPage() {
     const dailyRoutine = [
@@ -49,8 +58,6 @@ export default async function DailyAdhkarPage() {
 
     const cookieStore = await cookies();
     const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
-    const t = translations[lang] || translations.en;
-
     // ...
     return (
         <div className="container mx-auto px-4 py-8 max-w-5xl">

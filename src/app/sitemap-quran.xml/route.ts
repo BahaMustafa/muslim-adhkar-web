@@ -1,7 +1,7 @@
-import { getChapters, getGlobalAyahId } from '@/lib/quran';
+import { getChapters } from '@/lib/quran';
 import { getSurahSlug } from '@/lib/quran-mapping';
 
-const baseUrl = 'https://muslimadhkar.com';
+const baseUrl = 'https://www.muslimadhkar.com';
 
 export async function GET() {
     const chapters = await getChapters();

@@ -1,7 +1,20 @@
-export const metadata = {
-    title: "About Us - Muslim Adhkar",
-    description: "Learn about our mission to provide authentic Adhkar and Duas to the global Ummah.",
-};
+import type { Metadata } from 'next';
+import { cookies } from 'next/headers';
+import translations from '@/lib/translations.json';
+import { constructMetadata } from '@/components/SEO';
+
+export async function generateMetadata(): Promise<Metadata> {
+    const cookieStore = await cookies();
+    const lang = (cookieStore.get('NEXT_LOCALE')?.value || 'en') as 'en' | 'ar';
+    const t = translations[lang] || translations.en;
+
+    return constructMetadata({
+        title: lang === 'ar' ? 'عن مسلم أذكار' : 'About Muslim Adhkar',
+        description: t.footer.about,
+        path: '/about',
+        lang,
+    });
+}
 
 export default function AboutPage() {
     return (
@@ -9,7 +22,6 @@ export default function AboutPage() {
             <h1 className="text-4xl font-bold mb-8 text-foreground/90">About Muslim Adhkar</h1>
 
             <div className="space-y-8 text-lg leading-relaxed text-muted-foreground">
-
                 <section>
                     <h2 className="text-2xl font-semibold mb-3 text-foreground">Mission</h2>
                     <p>
@@ -33,7 +45,6 @@ export default function AboutPage() {
                         Every translation and transliteration is double-checked against established sources to ensure the correct meaning is conveyed.
                     </p>
                 </section>
-
             </div>
         </main>
     );

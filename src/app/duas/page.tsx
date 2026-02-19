@@ -1,20 +1,22 @@
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Metadata } from 'next';
-import { getAllAdhkarByCategory, getAllAdhkarSlugs, getAdhkarBySlug } from '@/lib/adhkar-service';
-import { AdhkarPageData } from '@/lib/types';
+import { getAllAdhkarSlugs, getAdhkarBySlug } from '@/lib/adhkar-service';
 import { categoryMap } from '@/lib/data';
 import { cookies } from 'next/headers';
 import translations from '@/lib/translations.json';
+import { constructMetadata } from '@/components/SEO';
 
 export async function generateMetadata(): Promise<Metadata> {
     const cookieStore = await cookies();
     const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
     const t = translations[lang] || translations.en;
-    return {
-        title: `${t.pages.duas.title} - ${t.branding.name}`,
+    return constructMetadata({
+        title: t.pages.duas.title,
         description: t.pages.duas.intro,
-    };
+        path: '/duas',
+        lang,
+    });
 }
 
 export default async function DuasIndexPage() {

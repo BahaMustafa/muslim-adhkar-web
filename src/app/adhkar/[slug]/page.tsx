@@ -64,7 +64,7 @@ export default async function AdhkarPage({ params }: { params: Promise<{ slug: s
             "position": index + 1,
             "name": adhkar.title,
             "text": `Recite ${adhkar.title} ${adhkar.count} times.`,
-            "url": `https://muslim-adhkar.com/adhkar/${slug}#${adhkar.slug}`
+            "url": `https://www.muslimadhkar.com/adhkar/${slug}#${adhkar.slug}`
         }))
     };
 

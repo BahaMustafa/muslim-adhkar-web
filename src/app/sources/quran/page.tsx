@@ -5,16 +5,19 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { cookies } from 'next/headers';
 import translations from '@/lib/translations.json';
 import { Metadata } from 'next';
+import { constructMetadata } from '@/components/SEO';
 
 export async function generateMetadata(): Promise<Metadata> {
     const cookieStore = await cookies();
     const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "ar";
     const t = translations[lang] || translations.en;
 
-    return {
-        title: `${t.pages.quran.title} - ${t.branding.name}`,
+    return constructMetadata({
+        title: t.pages.quran.title,
         description: t.pages.quran.subtitle,
-    };
+        path: '/sources/quran',
+        lang,
+    });
 }
 
 export default async function QuranIndexPage() {
